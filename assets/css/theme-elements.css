@@ -6009,7 +6009,9 @@ h4 {
 	line-height: 27px;
 	margin: 0 0 14px 0;
 }
-
+.another_h4{
+	margin: 0 0 0px 0;
+}
 h5 {
 	font-size: 1em;
 	font-weight: 600;

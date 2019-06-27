@@ -62,6 +62,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				border-width: 2px;
 				font-size: 1em;
 			}
+			.padding {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.padding-petunjuk{
+				padding: 15px 14px!important;
+			}
+			.bg-petunjuk {
+				background-color : rgba(1,88,150,0.34);
+				background-blend-mode : overlay;
+				background-position-x : 50%;
+				background-position-y : 50%;
+				box-sizing : border-box;
+			}
+			.news{
+				background-color : transparent;
+			}
+			.bg-card{
+				background-color : rgb(105, 210, 231);
+			}
+			.bg-footer{
+				background-color : #5786bf !important;
+			}
 		</style>
 
 </head>
@@ -98,13 +121,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-			<div class="header-container container">
+			<div class="header-container container py-1">
 				<div class="header-row">
 					<div class="header-column">
 						<div class="header-row">
 							<div class="header-logo">
 								<a href="demo-medical.html">
-									<<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png" srcset="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png 1x" width="176" height="71" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
+									<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png" srcset="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png 1x" width="176" height="71" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
 								</a>
 							</div>
 						</div>
@@ -131,12 +154,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												</a>
 											</li>
 											<li class="dropdown-full-color dropdown-secondary">
-												<a class="nav-link" href="#">
+												<a class="nav-link" href="#berita">
 													BERITA
 												</a>
 											</li>
 											<li class="dropdown-full-color dropdown-secondary">
-												<a class="nav-link" href="#">
+												<a class="nav-link" href="#marketplace">
 													MARKETPLACE
 												</a>
 											</li>
@@ -326,15 +349,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<section class="pb-2 pt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col bg-info p-4 m-3">
+				<div class="col bg-info p-4 m-3 padding">
 					<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
 						<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/1-Daftar-Keamanan-Pangan.png" width="250" height="250" alt="">
 					</h1>
-					<h2 class="text-center">DAFTAR PKP</h2>
+					<h2 class="text-center font-weight-semibold">DAFTAR PKP</h2>
 					<p class="text-center text-white">Daftar Online Pelatihan Penyuluhan Keamanan Pangan</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button type="button" class="text-uppercase p-3 border-dark w-100 btn btn-default">Register</button>
+							<button type="button" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
 						</div>
 					</div>
 				</div>
@@ -342,11 +365,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
 						<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/2-Daftar-OSS.png" width="250" height="250" alt="">
 					</h1>
-					<h2 class="text-center">DAFTAR NIB</h2>
+					<h2 class="text-center font-weight-semibold">DAFTAR NIB</h2>
 					<p class="text-center text-white">Daftar Nomor Induk Berusaha (NIB) di OSS (Online Single Submission)</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button type="button" class="text-uppercase p-3 border-dark w-100 btn btn-default">Register</button>
+							<button type="button" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
 						</div>
 					</div>
 				</div>
@@ -354,277 +377,137 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
 						<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/3-Daftar-IRTP.png" width="250" height="250" alt="">
 					</h1>
-					<h2 class="text-center">DAFTAR SP PIRT</h2>
+					<h2 class="text-center font-weight-semibold">DAFTAR SP PIRT</h2>
 					<p class="text-center text-white">Daftar Sertifikasi Produk Pangan Industri Rumah Tangga</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button type="button" class="text-uppercase p-3 border-dark w-100 btn btn-default">Register</button>
+							<button type="button" class="text-uppercase p-2 border-dark w-100 btn btn-default ">Register</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<div class="d-flex justify-content-center">
-		<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg" width="1800" height="500" alt="" class="img-responsive wp-image-1024" srcset="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi-200x56.jpg 200w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi-400x111.jpg 400w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi-600x167.jpg 600w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi-800x222.jpg 800w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi-1200x333.jpg 1200w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg 1800w" sizes="(max-width: 800px) 100vw, 1800px">
+	<div class="d-flex justify-content-center mt-5">
+		<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg" height="400" alt="" class="w-100">
 	</div>
-	<section id="petunjuk">
+	<section id="petunjuk" class="bg-petunjuk">
 		<div class="container">
 			<div class="row">
-				<div class="col col-lg-9 mt-5" >
-					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-4 pb-4">
+				<div class="col col-8 mt-5" >
+					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
 						<h2 class="another_h2 text-white text-uppercase font-weight-bold">Petunjuk Pendaftaran E-IRTP</h2>
 					</div>
-					<div class="mt-4">
-						<ul class="nav nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-							<li class="nav-item active" data-option-value=".cardiology"><a class="nav-link active" href="#"><i class="fontawesome-icon fa-calendar-plus fas" style="font-size:17px;"></i><h4>DAFTAR PELATIHAN</h4></a></li>
-							<li class="nav-item" data-option-value=".gastroenterology"><a class="nav-link border border-white" href="#"><i class="fontawesome-icon fa-calendar-plus fas" style="font-size:17px;"></i><h4>DAFTAR NIB</h4></a></li>
-							<li class="nav-item" data-option-value=".pulmonology"><a class="nav-link" href="#"><i class="fontawesome-icon fa-calendar-plus fas" style="font-size:17px;"></i><h4>DAFTAR IRTP</h4></a></li>
+					<div class="mt-4 row">
+						<ul class="nav padding w-100 nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+							<li class="nav-item col-4 p-0 active" data-option-value=".pelatihan"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
+							<li class="nav-item col-4 p-0 " data-option-value=".nib"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-alt fas mr-3" style="font-size:17px;"></i>DAFTAR NIB</h4></a></li>
+							<li class="nav-item col-4 p-0" data-option-value=".irtp"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-check fas mr-3" style="font-size:17px;"></i>DAFTAR IRTP</h4></a></li>
 						</ul>
 					</div>
 					<div>
 						<div class="sort-destination-loader sort-destination-loader-showing">
 								<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-									<div class="col-md-6 col-lg-3 isotope-item cardiology">
+									<div class="col-md-6 col-lg-3 isotope-item pelatihan">
 										<div class="portfolio-item">
-											<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-												<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-													<span class="thumb-info-wrapper m-0">
-														<img src="img/demos/medical/doctors/doctor-1.jpg" class="img-fluid" alt="">
-													</span>
-													<span class="thumb-info-caption p-4">
-														<span class="custom-thumb-info-title">
-															<span class="custom-thumb-info-type font-weight-light text-4">Cardiology</span>
-															<span class="custom-thumb-info-inner font-weight-semibold text-5">John Doe</span>
-															<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-														</span>
-													</span>
-												</span>
-											</a>
+											<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/Pendaftaran-PKP.png" height="570" alt="" width="730">
 										</div>
 									</div>
-									<div class="col-md-6 col-lg-3 isotope-item gastroenterology">
+									<div class="col-md-6 col-lg-3 isotope-item nib">
 										<div class="portfolio-item">
-											<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-												<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-													<span class="thumb-info-wrapper m-0">
-														<img src="img/demos/medical/doctors/doctor-2.jpg" class="img-fluid" alt="">
-													</span>
-													<span class="thumb-info-caption p-4">
-														<span class="custom-thumb-info-title">
-															<span class="custom-thumb-info-type font-weight-light text-4">Gastroenterology</span>
-															<span class="custom-thumb-info-inner font-weight-semibold text-5">Robin Doe</span>
-															<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-														</span>
-													</span>
-												</span>
-											</a>
+											<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/nib.png" height="570" alt="" width="730">
 										</div>
 									</div>
-									<div class="col-md-6 col-lg-3 isotope-item pulmonology">
+									<div class="col-md-6 col-lg-3 isotope-item irtp">
 										<div class="portfolio-item">
-											<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-												<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-													<span class="thumb-info-wrapper m-0">
-														<img src="img/demos/medical/doctors/doctor-3.jpg" class="img-fluid" alt="">
-													</span>
-													<span class="thumb-info-caption p-4">
-														<span class="custom-thumb-info-title">
-															<span class="custom-thumb-info-type font-weight-light text-4">Pulmonology</span>
-															<span class="custom-thumb-info-inner font-weight-semibold text-5">Jessica Doe</span>
-															<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-														</span>
-													</span>
-												</span>
-											</a>
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-3 isotope-item dental">
-										<div class="portfolio-item">
-											<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-												<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-													<span class="thumb-info-wrapper m-0">
-														<img src="img/demos/medical/doctors/doctor-4.jpg" class="img-fluid" alt="">
-													</span>
-													<span class="thumb-info-caption p-4">
-														<span class="custom-thumb-info-title">
-															<span class="custom-thumb-info-type font-weight-light text-4">Dental</span>
-															<span class="custom-thumb-info-inner font-weight-semibold text-5">Rose Doe</span>
-															<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-														</span>
-													</span>
-												</span>
-											</a>
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-3 isotope-item gynecology">
-										<div class="portfolio-item">
-											<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-												<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-													<span class="thumb-info-wrapper m-0">
-														<img src="img/demos/medical/doctors/doctor-5.jpg" class="img-fluid" alt="">
-													</span>
-													<span class="thumb-info-caption p-4">
-														<span class="custom-thumb-info-title">
-															<span class="custom-thumb-info-type font-weight-light text-4">Gynecology</span>
-															<span class="custom-thumb-info-inner font-weight-semibold text-5">Mary Ann Doe</span>
-															<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-														</span>
-													</span>
-												</span>
-											</a>
+											<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/IRTP.png" height="570" alt="" width="730">
 										</div>
 									</div>
 								</div>
 							</div>
 					</div>
 				</div>
-				<div class="col col-lg-3 mt-5">
-					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-4 pb-4">
+				<div class="col col-4 mt-5">
+					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
 						<h2 class="another_h2 text-white text-uppercase font-weight-bold">Agenda</h2>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="team pb-2 pt-5">
-		<div class="container">
-			<div class="row pb-4">
-				<div class="owl-carousel owl-theme nav-bottom rounded-nav pl-1 pr-1" data-plugin-options="{'items': 4, 'loop': false, 'dots': false, 'nav': true}">
-					<div class="pr-3 pl-3">
-						<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-							<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-								<span class="thumb-info-wrapper m-0">
-									<img src="img/demos/medical/doctors/doctor-1.jpg" class="img-fluid" alt="">
-								</span>
-								<span class="thumb-info-caption p-4">
-									<span class="custom-thumb-info-title">
-										<span class="custom-thumb-info-type font-weight-light text-4">Cardiology</span>
-										<span class="custom-thumb-info-inner font-weight-semibold text-5">John Doe</span>
-										<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="pr-3 pl-3">
-						<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-							<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-								<span class="thumb-info-wrapper m-0">
-									<img src="img/demos/medical/doctors/doctor-2.jpg" class="img-fluid" alt="">
-								</span>
-								<span class="thumb-info-caption p-4">
-									<span class="custom-thumb-info-title">
-										<span class="custom-thumb-info-type font-weight-light text-4">Gastroenterology</span>
-										<span class="custom-thumb-info-inner font-weight-semibold text-5">Robin Doe</span>
-										<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="pr-3 pl-3">
-						<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-							<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-								<span class="thumb-info-wrapper m-0">
-									<img src="img/demos/medical/doctors/doctor-3.jpg" class="img-fluid" alt="">
-								</span>
-								<span class="thumb-info-caption p-4">
-									<span class="custom-thumb-info-title">
-										<span class="custom-thumb-info-type font-weight-light text-4">Pulmonology</span>
-										<span class="custom-thumb-info-inner font-weight-semibold text-5">Jessica Doe</span>
-										<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="pr-3 pl-3">
-						<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-							<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-								<span class="thumb-info-wrapper m-0">
-									<img src="img/demos/medical/doctors/doctor-4.jpg" class="img-fluid" alt="">
-								</span>
-								<span class="thumb-info-caption p-4">
-									<span class="custom-thumb-info-title">
-										<span class="custom-thumb-info-type font-weight-light text-4">Dental</span>
-										<span class="custom-thumb-info-inner font-weight-semibold text-5">Rose Doe</span>
-										<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="pr-3 pl-3">
-						<a href="#" data-href="demo-medical-doctors-detail.html" data-ajax-on-page class="text-decoration-none">
-							<span class="thumb-info thumb-info-no-zoom thumb-info-hide-wrapper-bg">
-								<span class="thumb-info-wrapper m-0">
-									<img src="img/demos/medical/doctors/doctor-5.jpg" class="img-fluid" alt="">
-								</span>
-								<span class="thumb-info-caption p-4">
-									<span class="custom-thumb-info-title">
-										<span class="custom-thumb-info-type font-weight-light text-4">Gynecology</span>
-										<span class="custom-thumb-info-inner font-weight-semibold text-5">Mary Ann Doe</span>
-										<i class="icon-arrow-right-circle icons font-weight-semibold text-5 "></i>
-									</span>
-								</span>
-							</span>
-						</a>
+					<div class="mt-4 p-0">
+						<ul class="list-group">
+							<li>
+								<div>
+									<h4>
+										<a class ="news" href="#">Penyuluhan Keamanan Pangan PIRT Bulan Juli 2019</a>
+									</h4>
+									<div class="duration">
+										<span class="tribe-event-date-start">23 Juli jam 8:00 am</span> - <span class="tribe-event-time">5:00 pm</span>
+									</div>
+									<div>
+										<hr/>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div>
+									<h4>
+										<a class="news" href="#">Penyuluhan Keamanan Pangan PIRT Bulan Juli 2019</a>
+									</h4>
+									<div class="duration">
+										<span class="tribe-event-date-start">23 Juli jam 8:00 am</span> - <span class="tribe-event-time">5:00 pm</span>
+									</div>
+									<div>
+										<hr/>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section">
+	<section class="section" id="berita">
 		<div class="container">
 			<div class="row pt-3">
 				<div class="col">
-					<h2 class="font-weight-semibold mb-0">Resources</h2>
-					<p class="lead font-weight-normal">List of our features resources</p>
+				<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-comment-dots far circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a;"></i>&nbsp;Berita dan Artikel<p></p></h2>
+				</div>
+				<div>
+					<hr/>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
 						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 							<span class="thumb-info-side-image-wrapper">
-								<img alt="" class="img-fluid" src="img/demos/medical/gallery/gallery-2.jpg">
-							</span>
-							<span class="thumb-info-caption">
-								<span class="thumb-info-caption-text p-xl">
-									<h4 class="font-weight-semibold mb-1">Prepare for visit</h4>
-									<p class="text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hend...</p>
-								</span>
+								<img alt="gambar" class="img-fluid" src="img/demos/medical/gallery/gallery-2.jpg">
 							</span>
 						</span>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
 						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 							<span class="thumb-info-side-image-wrapper">
-								<img alt="" class="img-fluid" src="img/demos/medical/gallery/gallery-3.jpg">
-							</span>
-							<span class="thumb-info-caption">
-								<span class="thumb-info-caption-text p-xl">
-									<h4 class="font-weight-semibold mb-1">Surgery proccess</h4>
-									<p class="text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hend...</p>
-								</span>
+								<img alt="gambar2" class="img-fluid" src="img/demos/medical/gallery/gallery-3.jpg">
 							</span>
 						</span>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
 						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 							<span class="thumb-info-side-image-wrapper">
-								<img alt="" class="img-fluid" src="img/demos/medical/gallery/gallery-4.jpg">
+								<img alt="gambar3" class="img-fluid" src="img/demos/medical/gallery/gallery-4.jpg">
 							</span>
-							<span class="thumb-info-caption">
-								<span class="thumb-info-caption-text p-xl">
-									<h4 class="font-weight-semibold mb-1">Patients</h4>
-									<p class="text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hend...</p>
-								</span>
+						</span>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
+						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
+							<span class="thumb-info-side-image-wrapper">
+								<img alt="gambar4" class="img-fluid" src="img/demos/medical/gallery/gallery-4.jpg">
 							</span>
 						</span>
 					</a>
@@ -632,148 +515,158 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="row pb-4">
 				<div class="col-lg-12 text-center">
-					<a class="btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold">view more</a>
+					<a class="btn-default btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold w-100">view more</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="bg-petunjuk">
 		<div class="container">
-			<div class="row pt-4">
+			<div class="row">
+				<div class="col mt-5">
+					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-chart-line fas circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a;"></i> Statistik Permohonan IRTP<p></p></h2>
+					<div>
+						<hr/>
+					</div>
+				</div>
+				<div class="w-100"></div>
+				<div class="col-4 border border-white mb-5">
+					<div class="d-flex justify-content-center mt-3">
+						<i class="counter-box-icon fontawesome-icon fa-diagnoses fas" style="font-size:70px;"></i>
+					</div>
+					<div>
+						<h2 class="font-weight-bold d-flex justify-content-center mb-0">
+							<span class="display-counter mt-1" data-value="78" data-direction="up" data-decimals="0">78</span><span class="unit mt-1"> UMKM</span>
+						</h2>
+					</div>
+					<div>
+						<p class="font-weight-bold text-center ">
+							<span> Peserta Pelatihan Penyuluhan Keamanan Pangan Tahun 2019</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-4 border border-white mb-5">
+					<div class="d-flex justify-content-center mt-3">
+					<i class="counter-box-icon fontawesome-icon fa-file-medical fas" style="font-size:70px;"></i>
+					</div>
+					<div>
+						<h2 class="font-weight-bold d-flex justify-content-center mb-0">
+							<span class="display-counter mt-1" data-value="23" data-direction="up" data-decimals="0">23</span><span class="unit mt-1"> UMKM</span>
+						</h2>
+					</div>
+					<div>
+						<p class="font-weight-bold text-center ">
+							Permohonan IRTP yang Disetujui Tahun 2019
+						</p>
+					</div>
+				</div>
+				<div class="col-4 border border-white mb-5">
+					<div class="d-flex justify-content-center mt-3">
+						<i class="counter-box-icon fontawesome-icon fa-file-signature fas" style="font-size:70px;"></i>
+					</div>
+					<div>
+						<h2 class="font-weight-bold d-flex justify-content-center pb-0 mb-0">
+							<span class="display-counter mt-1" data-value="593" data-direction="up" data-decimals="0">593</span><span class="unit mt-1"> UMKM</span>
+						</h2>
+					</div>
+					<div>
+						<p class="font-weight-bold text-center ">
+							UMKM di Kota Yogyakarta yang sudah tersertifikasi IRTP
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col border border-white mb-5 d-flex justify-content-center mr-5">
+					<h4 class="mt-3 mb-3">Jumlah Sertifikat P-IRT Diterbitkan Per Bulan</h4>
+				</div>
+				<div class="col border border-white mb-5 d-flex justify-content-center">
+					<h4 class="mt-3 mb-3">Jumlah Sertifikat P-IRT Diterbitkan Per Bulan</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="marketplace">
+		<div class="container pb-3">
+			<div class="row mt-4 mb-4">
 				<div class="col">
-					<h2 class="font-weight-semibold mb-0">Insurance</h2>
-					<p class="lead font-weight-normal">Major insurance providers accepted</p>
+					<h2 class="font-weight-semibold mb-0 text-center">MITRA MARKETPLACE</h2>
 				</div>
 			</div>
 			<div class="row mb-5 pb-4">
 				<div class="col">
-					<div class="content-grid">
-						<div class="row content-grid-row pl-3 pr-3">
-							<div class="content-grid-item col-md-4 col-lg-2 text-center">
-								<img src="img/demos/medical/logos/insurance-logo-1.png" alt class="img-fluid" />
-							</div>
-							<div class="content-grid-item col-md-4 col-lg-2 text-center">
-								<img src="img/demos/medical/logos/insurance-logo-2.png" alt class="img-fluid" />
-							</div>
-							<div class="content-grid-item col-md-4 col-lg-2 text-center">
-								<img src="img/demos/medical/logos/insurance-logo-3.png" alt class="img-fluid" />
-							</div>
-							<div class="content-grid-item col-md-4 col-lg-2 text-center">
-								<img src="img/demos/medical/logos/insurance-logo-4.png" alt class="img-fluid" />
-							</div>
-							<div class="content-grid-item col-md-4 col-lg-2 text-center">
-								<img src="img/demos/medical/logos/insurance-logo-5.png" alt class="img-fluid" />
-							</div>
-							<div class="content-grid-item col-md-4 col-lg-2 text-center">
-								<img src="img/demos/medical/logos/insurance-logo-6.png" alt class="img-fluid" />
-							</div>
-						</div>
+					<div class="d-flex justify-content-center">
+						<a href="https://dodolan.jogjakota.go.id/" target="_blank" aria-label="Program Gandeng Gendong"><img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-gandeng-gendong.png" width="350" height="139" alt=""></a>
 					</div>
+					<div class="d-flex justify-content-center">
+						<h2 class="font-weight-bold text-uppercase another_h2"> mitra sertifikasi </h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<a href="https://e-reg.pom.go.id/" target="_blank" aria-label="Badan POM RI"><img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-bpom-ri.png" width="350" height="139" alt=""></a>
+				</div>
+				<div class="col">
+					<a href="http://www.dgip.go.id/" target="_blank" aria-label="Dirjen Kekayaan Intelektual"><img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-haki.png" width="350" height="139" alt=""></a>
+				</div>
+				<div class="col">
+					<img href="http://e-lppommui.org/" target="_blank" aria-label="LPPOM Majelis Ulama Indonesia" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-lppom-mui.png" width="350" height="139" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section-secondary">
+	<footer id="footer" class="m-0 bg-footer">
 		<div class="container">
-			<div class="row pt-5 pb-5">
-				<div class="owl-carousel owl-theme nav-bottom rounded-nav" data-plugin-options="{'items': 1, 'loop': false, 'dots': false}">
-					<div class="row justify-content-center">
-						<div class="col-lg-8 pt-4 mt-3">
-							<div class="testimonial testimonial-style-2 testimonial-with-quotes mb-0">
-								<div class="testimonial-quote">“</div>
-								<blockquote>
-									<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum pretium, tortor risus dapibus tortor, eu suscipit orci leo sed nisl. Integer et ipsum eu nulla auctor mattis sit amet in diam. Vestibulum non.</p>
-								</blockquote>
-								<div class="testimonial-author">
-									<p class="text-uppercase">
-										<strong>John Smith</strong>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row justify-content-center">
-						<div class="col-lg-8 pt-4 mt-3">
-							<div class="testimonial testimonial-style-2 testimonial-with-quotes mb-0">
-								<div class="testimonial-quote">“</div>
-								<blockquote>
-									<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum pretium, tortor risus dapibus tortor, eu suscipit orci leo sed nisl. Integer et ipsum eu nulla auctor mattis sit amet in diam. Vestibulum non.</p>
-								</blockquote>
-								<div class="testimonial-author">
-									<p class="text-uppercase">
-										<strong>John Smith</strong>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="row pt-5 pb-3">
+				<div class="col-4">
+					<h4 class="font-weight-bold">DINAS KESEHATAN KOTA YOGYAKARTA</h4>
+				</div>
+				<div class="col-4">
+					<h4 class="font-weight-bold">PETA LOKASI</h4>
+				</div>
+				<div class="col-4">
+					<h4 class="font-weight-bold">DOWNLOAD APLKASI JSS</h4>
 				</div>
 			</div>
-		</div>
-	</section>
+			<div class="row pb-5">
+				<div class="col-4">
+					<div>
+						<p class="text-white">Jalan Kenari No.56 Kota Yogyakarta (Komplek Balaikota Yogyakarta) Kodepos 55165</p>
+					</div>
+					<div>
+						<p class="mb-0 text-white">Telp. (0274) 515869</p>
+					</div>
+					<div>
+						<p class="mb-0 text-white">Fax. (0274) 515868 </p>
+					</div>
+					<div>
+						<p class="mb-0 text-white">WhatsApp. 0-823-1404-0407</p>
+					</div>
+					<div>
+						<p class="mb-0 text-white">Email: regulasi.dinkesyk@gmail.com</p>
+					</div>
 
-	<footer id="footer" class="m-0">
-		<div class="container">
-			<div class="row pt-5 pb-4">
-				<div class="col-md-4 col-lg-3 mb-2">
-					<h4 class="mb-4">Location</h4>
-					<p>
-						Porto Medical<br>
-						123 Porto Blvd, Suite 100<br>
-						New York, NY<br>
-						Phone : 123-456-7890
-					</p>
 				</div>
-				<div class="col-md-4 col-lg-3">
-					<h4 class="mb-4">Opening Hours</h4>
-					<div class="info custom-info">
-						<span>Mon-Fri</span>
-						<span>8:30 am to 5:00 pm</span>
-					</div>
-					<div class="info custom-info">
-						<span>Saturday</span>
-						<span>9:30 am to 1:00 pm</span>
-					</div>
-					<div class="info custom-info">
-						<span>Sunday</span>
-						<span>Closed</span>
-					</div>
+				<div class="col-4">
+					<h1>PETA LOKASI</h1>
 				</div>
-				<div class="col-md-4 col-lg-3">
-					<div class="contact-details">
-						<h4 class="mb-4">Emergency Cases</h4>
-						<a class="text-decoration-none" href="tel:1234567890">
-							<strong class="font-weight-light">(800)123-4567</strong>
+				<div class="col-4">
+					<div>
+						<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" >
+							<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/en_badge_web_generic-e1558684699870.png" width="350" height="110" alt="Play Store">
 						</a>
 					</div>
-				</div>
-				<div class="col-lg-2 text-md-center text-lg-left ml-lg-auto">
-					<h4 class="mb-4">Social Media</h4>
-					<ul class="social-icons">
-						<li class="social-icons-facebook">
-							<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-						<li class="social-icons-twitter">
-							<a href="http://www.twitter.com/" target="_blank" title="Twitter">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-						<li class="social-icons-linkedin">
-							<a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-						</li>
-					</ul>
+
+
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright pt-3 pb-3">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center m-0">
-						<p>© Copyright 2019. All Rights Reserved.</p>
+					<div class="col-lg-12 m-0">
+						<p>Copyright 2019 IRTP Online - Dinas Kesehatan Kota Yogyakarta | All Rights Reserved</p>
 					</div>
 				</div>
 			</div>
