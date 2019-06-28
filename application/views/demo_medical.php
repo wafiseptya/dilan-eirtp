@@ -85,6 +85,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			.bg-footer{
 				background-color : #5786bf !important;
 			}
+			.bg-information {
+				color : #016399;
+			}
+			.p-information {
+				color : #000;
+			}
 		</style>
 
 </head>
@@ -279,7 +285,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="feature-box-icon" style="min-width: 4.7rem;">
 								<i style="background-color:transparent;border-color:transparent;width:25px;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-gavel fas circle-no"></i>
 							</div>
-							<div class="feature-box-info">
+							<div class="feature-box-info pl-0 pt-0 pr-0">
 								<h4 class="font-weight-semibold">Legalitas Produk</h4>
 								<p>Produk pangan yang diproduksi sudah siap dan layak untuk beredar dipasaran.</p>
 							</div>	
@@ -290,7 +296,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="feature-box-icon" style="min-width: 4.7rem;">
 								<i style="background-color:transparent;border-color:transparent;height:auto;width: 25px;line-height:normal;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-thumbs-up far circle-no"></i>
 							</div>
-							<div class="feature-box-info">
+							<div class="feature-box-info pl-0 pt-0 pr-0">
 								<h4 class="font-weight-semibold">Produk Diakui & Terpercaya</h4>
 								<p>Para konsumen akan lebih percaya dengan Produk</p>
 							</div>
@@ -301,7 +307,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="feature-box-icon" style="min-width: 4.7rem;">
 								<i style="background-color:transparent;border-color:transparent;height:auto;width: 25px;line-height:normal;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-cart-plus fas circle-no"></i>
 							</div>
-							<div class="feature-box-info">
+							<div class="feature-box-info pl-0 pt-0 pr-0">
 								<h4 class="font-weight-semibold">Produk Bisa Masuk Ritel Besar</h4>
 								<p>Produk bisa menembus pasar yang lebih berkelas yaitu masuk ritel-ritel besar.</p>
 							</div>
@@ -389,7 +395,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</section>
 	<div class="d-flex justify-content-center mt-5">
-		<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg" height="400" alt="" class="w-100">
+		<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" ><img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg" height="400" alt="" class="w-100"></a>
 	</div>
 	<section id="petunjuk" class="bg-petunjuk">
 		<div class="container">
@@ -400,7 +406,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="mt-4 row">
 						<ul class="nav padding w-100 nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-							<li class="nav-item col-4 p-0 active" data-option-value=".pelatihan"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
+							<li class="nav-item col-4 p-0 active" data-option-value=".pelatihan" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
 							<li class="nav-item col-4 p-0 " data-option-value=".nib"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-alt fas mr-3" style="font-size:17px;"></i>DAFTAR NIB</h4></a></li>
 							<li class="nav-item col-4 p-0" data-option-value=".irtp"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-check fas mr-3" style="font-size:17px;"></i>DAFTAR IRTP</h4></a></li>
 						</ul>
@@ -531,46 +537,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="w-100"></div>
 				<div class="col-4 border border-white mb-5">
-					<div class="d-flex justify-content-center mt-3">
+					<div class="d-flex justify-content-center mt-3 bg-information">
 						<i class="counter-box-icon fontawesome-icon fa-diagnoses fas" style="font-size:70px;"></i>
 					</div>
 					<div>
-						<h2 class="font-weight-bold d-flex justify-content-center mb-0">
+						<h2 class="font-weight-bold d-flex justify-content-center mb-0 bg-information">
 							<span class="display-counter mt-1" data-value="78" data-direction="up" data-decimals="0">78</span><span class="unit mt-1"> UMKM</span>
 						</h2>
 					</div>
 					<div>
-						<p class="font-weight-bold text-center ">
+						<p class="font-weight-bold text-center p-information">
 							<span> Peserta Pelatihan Penyuluhan Keamanan Pangan Tahun 2019</span>
 						</p>
 					</div>
 				</div>
 				<div class="col-4 border border-white mb-5">
-					<div class="d-flex justify-content-center mt-3">
+					<div class="d-flex justify-content-center mt-3 bg-information">
 					<i class="counter-box-icon fontawesome-icon fa-file-medical fas" style="font-size:70px;"></i>
 					</div>
 					<div>
-						<h2 class="font-weight-bold d-flex justify-content-center mb-0">
+						<h2 class="font-weight-bold d-flex justify-content-center mb-0 bg-information">
 							<span class="display-counter mt-1" data-value="23" data-direction="up" data-decimals="0">23</span><span class="unit mt-1"> UMKM</span>
 						</h2>
 					</div>
 					<div>
-						<p class="font-weight-bold text-center ">
+						<p class="font-weight-bold text-center p-information">
 							Permohonan IRTP yang Disetujui Tahun 2019
 						</p>
 					</div>
 				</div>
-				<div class="col-4 border border-white mb-5">
+				<div class="col-4 border border-white mb-5 bg-information">
 					<div class="d-flex justify-content-center mt-3">
 						<i class="counter-box-icon fontawesome-icon fa-file-signature fas" style="font-size:70px;"></i>
 					</div>
 					<div>
-						<h2 class="font-weight-bold d-flex justify-content-center pb-0 mb-0">
+						<h2 class="font-weight-bold d-flex justify-content-center pb-0 mb-0 bg-information">
 							<span class="display-counter mt-1" data-value="593" data-direction="up" data-decimals="0">593</span><span class="unit mt-1"> UMKM</span>
 						</h2>
 					</div>
 					<div>
-						<p class="font-weight-bold text-center ">
+						<p class="font-weight-bold text-center p-information">
 							UMKM di Kota Yogyakarta yang sudah tersertifikasi IRTP
 						</p>
 					</div>
