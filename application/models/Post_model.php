@@ -93,11 +93,11 @@ class Post_model extends CI_Model
 
     private function _deleteImage($id)
     {
-        $post = $this->getById($id);
-        if ($post->banner != "default.jpg") {
-          $filename = explode(".", $post->banner)[0];
-        return array_map('unlink', glob(FCPATH."upload/product/$filename.*"));
-        }
+      $post = $this->getById($id);
+      if ($post->banner != "default.jpg") {
+        $filename = explode(".", $post->banner)[0];
+        return array_map('unlink', glob(FCPATH."upload/post/$filename.*"));
+      }
     }
 
 }
