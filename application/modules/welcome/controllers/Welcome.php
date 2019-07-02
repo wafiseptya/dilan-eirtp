@@ -3,6 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
+  
+  public function __construct()
+  {
+      parent::__construct();
+      $this->load->model("post_model");
+      $this->load->model("header_model");
+      $this->load->model("agenda_model");
+  }
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,6 +29,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('demo_medical');
+    $data["post"] = $this->post_model->getTop();
+    $data["header"] = $this->header_model->getAll();
+    
+		$this->load->view('demo_medical', $data);
 	}
 }

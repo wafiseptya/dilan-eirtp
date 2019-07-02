@@ -91,6 +91,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			.p-information {
 				color : #000;
 			}
+      .#mainNav .active{
+        transition: 1s;
+      }
+      .android-bg {
+        width: 100vw;
+        min-height: 60vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg);
+      }
+      .image-post {
+        width: 100%;
+        height: 175px;
+        background-position: 50% 50%;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+      }
 		</style>
 
 </head>
@@ -142,10 +160,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="header-row">
 							<div class="header-nav order-2 order-lg-1">
 								<div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
-									<nav class="collapse">
+									<nav class="collapse" id="nav-bar">
 										<ul class="nav nav-pills" id="mainNav">
 											<li class="dropdown-full-color dropdown-secondary">
-												<a class="nav-link active" href="#">
+												<a class="nav-link active" href="#home">
 													BERANDA
 												</a>
 											</li>
@@ -156,7 +174,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											</li>
 											<li class="dropdown dropdown-full-color dropdown-secondary">
 												<a class="nav-link dropdown-toggle" class="dropdown-toggle" href="#petunjuk">
-													PETUJUK
+													PETUNJUK
 												</a>
 											</li>
 											<li class="dropdown-full-color dropdown-secondary">
@@ -190,77 +208,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div role="main" class="main">
 		
-	<div class="slider-container rev_slider_wrapper" style="height: 650px;">
-		<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 650, 'disableProgressBar': 'on', 'navigation': {'bullets': {'enable': true, 'direction': 'vertical', 'h_align': 'right', 'v_align': 'center', 'space': 5}, 'arrows': {'enable': false}}}">
+	<div id="home" class="slider-container rev_slider_wrapper" style="height: 650px;">
+		<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 450, 'disableProgressBar': 'on', 'navigation': {'bullets': {'enable': true, 'direction': 'vertical', 'h_align': 'right', 'v_align': 'center', 'space': 5}, 'arrows': {'enable': false}}}">
 			<ul>
+      <?php foreach ($header as $h): ?>
 				<li data-transition="fade">
-					<img src="img/demos/medical/slides/slide-medical-1.jpg"  
-						alt=""
+					<img src="<?php echo base_url('upload/header/'.$h->image) ?>"  
+						alt="<?php echo base_url('upload/header/'.$h->description) ?>"
 						data-bgposition="center center" 
 						data-bgfit="cover" 
 						data-bgrepeat="no-repeat"
 						class="rev-slidebg">
-
-					<div class="tp-caption main-label"
-						data-x="left" data-hoffset="25"
-						data-y="center" data-voffset="-5"
-						data-start="1500"
-						data-whitespace="nowrap"						 
-						data-transform_in="y:[100%];s:500;"
-						data-transform_out="opacity:0;s:500;"
-						style="z-index: 5; font-size: 1.5em; text-transform: uppercase;"
-						data-mask_in="x:0px;y:0px;">20 Years Caring About You</div>
-
-					<div class="tp-caption main-label"
-						data-x="left" data-hoffset="25"
-						data-y="center" data-voffset="-55"
-						data-start="500"
-						style="z-index: 5; text-transform: uppercase; font-size: 52px;"
-						data-transform_in="y:[-300%];opacity:0;s:500;">Specialists</div>
-					
-					<div class="tp-caption bottom-label"
-						data-x="left" data-hoffset="25"
-						data-y="center" data-voffset="40"
-						data-start="2000"
-						style="z-index: 5; border-bottom: 1px solid #fff; padding-bottom: 3px;"
-						data-transform_in="y:[100%];opacity:0;s:500;" style="font-size: 1.2em;">We are located in New York</div>
 				</li>
-				<li data-transition="fade">
-					<img src="img/demos/medical/slides/slide-medical-2.jpg"  
-						alt=""
-						data-bgposition="center center" 
-						data-bgfit="cover" 
-						data-bgrepeat="no-repeat"
-						class="rev-slidebg">
-
-					<div class="tp-caption main-label"
-						data-x="left" data-hoffset="25"
-						data-y="center" data-voffset="-5"
-						data-start="1500"
-						data-whitespace="nowrap"						 
-						data-transform_in="y:[100%];s:500;"
-						data-transform_out="opacity:0;s:500;"
-						style="z-index: 5; font-size: 1.5em; text-transform: uppercase;"
-						data-mask_in="x:0px;y:0px;">Talk to us now to schedule a medical appointment</div>
-
-					<div class="tp-caption main-label"
-						data-x="left" data-hoffset="25"
-						data-y="center" data-voffset="-55"
-						data-start="500"
-						style="z-index: 5; text-transform: uppercase; font-size: 52px;"
-						data-transform_in="y:[-300%];opacity:0;s:500;">Medical Appointment</div>
-					
-					<div class="tp-caption bottom-label"
-						data-x="left" data-hoffset="25"
-						data-y="center" data-voffset="40"
-						data-start="2000"
-						style="z-index: 5; border-bottom: 1px solid #fff; padding-bottom: 3px;"
-						data-transform_in="y:[100%];opacity:0;s:500;" style="font-size: 1.2em;">Online or Over the Phone</div>
-				</li>
+      <?php endforeach; ?>
 			</ul>
 		</div>
 	</div>
-		<section class="section-custom-medical" id="dilan_e_irtp">
+  <section class="section-custom-medical" id="dilan_e_irtp">
 		<div class="container">
 			<div class="row medical-schedules">
 				<div class="col-xl-12 bg-color-primary">
@@ -351,9 +315,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
-	</section>
-	<section class="pb-2 pt-5">
-		<div class="container">
+    <div class="container">
 			<div class="row">
 				<div class="col bg-info p-4 m-3 padding">
 					<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
@@ -393,10 +355,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" >
+    	<div class="d-flex justify-content-center mt-5 android-bg"></div>
+    </a>
 	</section>
-	<div class="d-flex justify-content-center mt-5">
-		<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" ><img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg" height="400" alt="" class="w-100"></a>
-	</div>
 	<section id="petunjuk" class="bg-petunjuk">
 		<div class="container">
 			<div class="row">
@@ -482,42 +445,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+        <?php foreach ($post as $p): ?>
+        <div class="col-md-3">
 					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
 						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-							<span class="thumb-info-side-image-wrapper">
-								<img alt="gambar" class="img-fluid" src="img/demos/medical/gallery/gallery-2.jpg">
+							<span class="thumb-info-side-image-wrapper image-post" style="background-image:url('<?php echo base_url('upload/post/'.$p->banner) ?>');overflow: hidden">
 							</span>
+              <span class="thumb-info-caption">
+                <span class="thumb-info-caption-text p-xl">
+                  <h4 class="font-weight-semibold mb-1"><?php echo $p->title ?></h4>
+                  <p class="text-3"><?php echo substr($p->content, 0, 80) ?></p>
+                </span>
+              </span>
 						</span>
 					</a>
 				</div>
-				<div class="col-md-3">
-					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
-						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-							<span class="thumb-info-side-image-wrapper">
-								<img alt="gambar2" class="img-fluid" src="img/demos/medical/gallery/gallery-3.jpg">
-							</span>
-						</span>
-					</a>
-				</div>
-				<div class="col-md-3">
-					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
-						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-							<span class="thumb-info-side-image-wrapper">
-								<img alt="gambar3" class="img-fluid" src="img/demos/medical/gallery/gallery-4.jpg">
-							</span>
-						</span>
-					</a>
-				</div>
-				<div class="col-md-3">
-					<a href="demo-medical-resources-detail.html" class="text-decoration-none">
-						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-							<span class="thumb-info-side-image-wrapper">
-								<img alt="gambar4" class="img-fluid" src="img/demos/medical/gallery/gallery-4.jpg">
-							</span>
-						</span>
-					</a>
-				</div>
+        <?php endforeach; ?>
+				
 			</div>
 			<div class="row pb-4">
 				<div class="col-lg-12 text-center">
@@ -525,9 +469,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
-	</section>
-	<section class="bg-petunjuk">
-		<div class="container">
+    <div class="container">
 			<div class="row">
 				<div class="col mt-5">
 					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-chart-line fas circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a;"></i> Statistik Permohonan IRTP<p></p></h2>
@@ -655,7 +597,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				</div>
 				<div class="col-4">
-					<h1>PETA LOKASI</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9042544645213!2d110.38823011415445!3d-7.799960879585036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577caaa817ed%3A0x1e4bc5c6b6a26619!2sDinas+Kesehatan+Kota+Yogyakarta!5e0!3m2!1sid!2sid!4v1561953491673!5m2!1sid!2sid" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<div class="col-4">
 					<div>
@@ -716,6 +658,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- Theme Initialization Files -->
 	<script src="<?php echo base_url('assets/');?>js/theme.init.js"></script>
+
+  <script>
+  $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+      
+      //smoothscroll
+      $('a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          $(document).off("scroll");
+          
+          $('a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+        
+          var target = this.hash,
+              menu = target;
+          $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top+2
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });
+
+  function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+      $('#mainNav a').each(function () {
+          var currLink = $(this);
+          var refElement = $(currLink.attr("href"));
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+              $('#mainNav li a').removeClass("active");
+              currLink.addClass("active");
+              console.log('add:', currLink);
+          }
+          else{
+              currLink.removeClass("active");
+              console.log('remove:', currLink);
+          }
+      });
+  }
+  </script>
 
 </div>
 

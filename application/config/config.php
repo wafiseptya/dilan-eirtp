@@ -521,3 +521,20 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+spl_autoload_register("banshee_autoload");
+
+function banshee_autoload($class)
+{
+	
+    if (strpos($class, 'CI_') !== 0)
+    {
+        if (file_exists($file = APPPATH . 'core/' . $class . '.php'))
+        {
+            include $file;
+        }
+        elseif (file_exists($file = APPPATH . 'libraries/' . $class . '.php'))
+        {
+            include $file;
+        }
+    }
+}
