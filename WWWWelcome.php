@@ -1,16 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends MY_frontend {
-
-  
-  public function __construct()
-  {
-      parent::__construct();
-      $this->load->model("news/news_model");
-      $this->load->model("header/header_model");
-      $this->load->model("agenda/agenda_model");
-  }
+class WWWWelcome extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -29,10 +20,19 @@ class Welcome extends MY_frontend {
 	 */
 	public function index()
 	{
-    $data["post"] = $this->news_model->getTop();
-    $data["header"] = $this->header_model->getAll();
-    
-		$data["content"] = 'demo_medical';
-		$this->view($data, true);
+		$this->load->view('demo_medical');
 	}
+	public function agenda()
+	{
+		$this->load->view('agenda');
+	}
+	public function news()
+	{
+		$this->load->view('news');
+	}
+	public function pojok_dilan()
+	{
+		$this->load->view('pojok_dilan');
+	}
+
 }

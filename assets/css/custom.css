@@ -1,1 +1,74 @@
-/* Add here all your CSS customizations */
+.bg{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    background-color: rgba( 103,183,225,0.85);;
+}
+.sub_bg{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: rgba( 103,183,225,0.85);
+}
+.border_bottom{
+    height: 1px;
+    background-color: black;
+}
+.bg-footer{
+    background-color : #5786bf !important;
+}
+.bg-kalender {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #90c9e8;
+    border: solid #000000 2px;
+    color: #105378;
+    margin-right: 10px;
+}
+.padding-header {
+    margin-bottom: 25px !important;
+    padding-top: 17px !important;
+    padding-bottom: 6px !important;
+}
+.btn-default {
+    background-image: linear-gradient( to top, #5aabd6, #90c9e8 );
+    color: black;
+    border-width: 2px;
+    font-size: 1em;
+}
+.padding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.padding-petunjuk{
+    padding: 15px 14px!important;
+}
+.bg-petunjuk {
+    background-color : rgba(1,88,150,0.34);
+    background-blend-mode : overlay;
+    background-position-x : 50%;
+    background-position-y : 50%;
+    box-sizing : border-box;
+}
+.news{
+    background-color : transparent;
+}
+.bg-card{
+    background-color : rgb(105, 210, 231);
+}
+
+.bg-information {
+    color : #016399;
+}
+.p-information {
+    color : #000;
+}
+
+.text_color{
+    color : white;
+}
