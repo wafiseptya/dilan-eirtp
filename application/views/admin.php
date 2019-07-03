@@ -71,8 +71,8 @@
             <div id="header" class="collapse" aria-labelledby="headerAgenda" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Header Tables</h6>
-                <a class="dropdown-item" href="<?php echo site_url('header/add') ?>">New Header</a>
-                <a class="dropdown-item" href="<?php echo site_url('header') ?>">List Header</a>
+                <a class="dropdown-item" href="<?php echo base_url('header/add') ?>">New Header</a>
+                <a class="dropdown-item" href="<?php echo base_url('header') ?>">List Header</a>
             </div>
             </div>
         </li>
@@ -85,8 +85,8 @@
             <div id="agenda" class="collapse" aria-labelledby="agendaHeading" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Agenda Tables</h6>
-                <a class="dropdown-item" href="<?php echo site_url('agenda/add') ?>">New Agenda</a>
-                <a class="dropdown-item" href="<?php echo site_url('agenda') ?>">List Agenda</a>
+                <a class="dropdown-item" href="<?php echo base_url('agenda/add') ?>">New Agenda</a>
+                <a class="dropdown-item" href="<?php echo base_url('agenda') ?>">List Agenda</a>
             </div>
             </div>
         </li>
