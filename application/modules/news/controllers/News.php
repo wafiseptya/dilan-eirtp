@@ -29,7 +29,8 @@ class News extends MY_frontend
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
 
-        $this->load->view("news/new_form");
+        $data["content"] = 'new_form';
+        $this->admin($data, true);
     }
 
     public function edit($id = null)

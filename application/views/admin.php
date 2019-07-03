@@ -12,7 +12,6 @@
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo base_url('assets/admin/')?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Page level plugin CSS-->
     <link href="<?php echo base_url('assets/admin/')?>vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
@@ -40,8 +39,8 @@
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item <?php echo $this->uri->segment(2) == '' ? 'active': '' ?>">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'admin' ? 'active': '' ?>">
+            <a class="nav-link" href="<?php echo base_url('admin') ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
         </li>
@@ -50,21 +49,21 @@
         <hr class="sidebar-divider">
 
         <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item <?php echo $this->uri->segment(2) == '' ? 'active': 'artikel' ?>">
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'news' ? 'active': '' ?>">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Artikel</span>
+              <i class="fas fa-fw fa-cog"></i>
+              <span>Artikel</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Artikel Tables</h6>
-                <a class="dropdown-item" href="<?php echo base_url('news/add') ?>">New Artikel</a>
-                <a class="dropdown-item" href="<?php echo base_url('news') ?>">List Artikel</a>
-            </div>
+              <div class="bg-white py-2 collapse-inner rounded">
+                  <h6 class="collapse-header">Artikel Tables</h6>
+                  <a class="dropdown-item" href="<?php echo base_url('news/add') ?>">New Artikel</a>
+                  <a class="dropdown-item" href="<?php echo base_url('news') ?>">List Artikel</a>
+              </div>
             </div>
         </li>
 
-        <li class="nav-item <?php echo $this->uri->segment(2) == '' ? 'active': 'header' ?>">
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'header' ? 'active': '' ?>">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#header" aria-expanded="true" aria-controls="header">
             <i class="fas fa-fw fa-cog"></i>
             <span>Header</span>
@@ -78,7 +77,7 @@
             </div>
         </li>
 
-        <li class="nav-item <?php echo $this->uri->segment(2) == '' ? 'active': 'agenda' ?>">
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'agenda' ? 'active': '' ?>">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#agenda" aria-expanded="true" aria-controls="agenda">
             <i class="fas fa-fw fa-cog"></i>
             <span>Agenda</span>
@@ -376,12 +375,19 @@
   <!-- Demo scripts for this page-->
   <script src="<?php echo base_url('assets/admin/')?>js/demo/datatables-demo.js"></script>
   <script src="<?php echo base_url('assets/admin/')?>js/demo/chart-area-demo.js"></script>
+  <script src="<?php echo base_url('assets/admin/')?>vendor/ckeditor5/ckeditor.js"></script>
 
   <script>
     function deleteConfirm(url){
       $('#btn-delete').attr('href', url);
       $('#deleteModal').modal();
     }
+    ClassicEditor
+    .create( document.querySelector( '#editor' ) )
+    .catch( error => {
+        console.error( error );
+    } );
+
   </script>
 
 </body>
