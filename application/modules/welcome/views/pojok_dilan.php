@@ -3,51 +3,23 @@
 			<div class="container">
 				<h2 class="font-weight-bold">Pojok Dilan</h2>
 				<div class="row">
+					<?php foreach ($posts as $news): ?>
 					<div class="col-4">
 						<a href="#" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 								<span class="thumb-info-side-image-wrapper">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg">
+									<span class="thumb-info-side-image-wrapper image-post w-100" style="background-image:url('<?php echo base_url('upload/news/'.$news->banner) ?>');overflow: hidden">
 								</span>
 								<span class="thumb-info-caption">
 									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">Judul Lorem ipsum</h4>
+										<h4 class="font-weight-semibold mb-1 text-center"><?php echo $news->title ?></h4>
 										<p class="text-2 text-center">Tanggal</p>
 									</span>
 								</span>
 							</span>
 						</a>
 					</div>
-					<div class="col-4">
-						<a href="#" class="text-decoration-none">
-							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg">
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">Judul Lorem ipsum</h4>
-										<p class="text-2 text-center">Tanggal</p>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-4">
-						<a href="#" class="text-decoration-none">
-							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg">
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">Judul Lorem ipsum</h4>
-										<p class="text-2 text-center">Tanggal</p>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
+					<?php endforeach; ?>	
 				</div>
 				<div class="row">
 					<div class="col-4">
