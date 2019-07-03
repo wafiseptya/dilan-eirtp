@@ -71,16 +71,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="header-row">
                                     <nav class="header-nav-top">
                                         <ul class="nav nav-pills">
-                                            <li class="nav-item nav-item-borders py-2 d-none d-sm-inline-flex">
+                                            <li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
                                                 <span class="pl-0">Jalan Kenari No.56 Kota Yogyakarta 55165</span>
                                             </li>
-                                            <li class="nav-item nav-item-borders py-2">
+                                            <li class="nav-item nav-item-borders py-1">
                                                 <a href="tel:123-456-7890">Telp. (0274) 515869 Fax. (0274) 515868</a>
                                             </li>
-                                            <li class="nav-item nav-item-borders py-2 d-none d-sm-inline-flex">
+                                            <li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
                                                 <span class="pl-0">Agenda</span>
                                             </li>
-                                            <li class="nav-item nav-item-borders py-2 d-none d-sm-inline-flex">
+                                            <li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
                                                 <span class="pl-0">Kontak</span>
                                             </li>
                                         </ul>
@@ -90,13 +90,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="header-container container py-1">
+                <div class="header-container container">
                     <div class="header-row">
                         <div class="header-column">
                             <div class="header-row">
                                 <div class="header-logo">
                                     <a href="demo-medical.html">
-                                        <img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png" srcset="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png 1x" width="176" height="71" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
+                                        <img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png" srcset="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png 1x" height="65" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
                                     </a>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <nav class="collapse" id="nav-bar">
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link active" href="#home">
+                                                    <a class="nav-link active" href="">
                                                         BERANDA
                                                     </a>
                                                 </li>
@@ -133,7 +133,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="#">
+                                                    <a class="nav-link" href="<?php echo site_url('welcome/pojok') ?>">
                                                         POJOK DILAN
                                                     </a>
                                                 </li>
