@@ -86,3 +86,6 @@ background-position: 50% 50%;
 background-repeat:   no-repeat;
 background-size:     cover;
 }
+.ck-editor__editable {
+  min-height: 200px!important;
+}
