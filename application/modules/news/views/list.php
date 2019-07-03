@@ -6,7 +6,7 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <a href="<?php echo site_url('news/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+      <a href="<?php echo base_url('news/add') ?>"><i class="fas fa-plus"></i> Add New</a>
     </div>
     <div class="card-body">
     <div class="table-responsive">
@@ -31,9 +31,9 @@
               <td class="small">
                 <?php echo substr($p->content, 0, 120) ?></td>
               <td width="250">
-                <a href="<?php echo site_url('news/edit/'.$p->id) ?>"
+                <a href="<?php echo base_url('news/edit/'.$p->id) ?>"
                 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-                <a onclick="deleteConfirm('<?php echo site_url('news/delete/'.$p->id) ?>')"
+                <a onclick="deleteConfirm('<?php echo base_url('news/delete/'.$p->id) ?>')"
                 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
               </td>
             </tr>

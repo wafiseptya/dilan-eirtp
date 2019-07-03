@@ -9,7 +9,7 @@
 
   <div class="card mb-3">
     <div class="card-header">
-      <a href="<?php echo site_url('header') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+      <a href="<?php echo base_url('header') ?>"><i class="fas fa-arrow-left"></i> Back</a>
     </div>
     <div class="card-body">
 
