@@ -36,7 +36,7 @@
 							<hr class="border_bottom"/>
 						</div>
 						<div class="sub_bg mb-3">
-							<h4 class="mb-0 text-white font-weight-bold">venue</h4>
+							<h4 class="mb-0 text-white font-weight-bold">Venue</h4>
 						</div> 
 						<div>
 							<?php echo $agenda->venue ?>

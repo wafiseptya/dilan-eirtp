@@ -117,8 +117,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                         DILAN E-IRTP
                                                     </a>
                                                 </li>
-                                                <li class="dropdown dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link dropdown-toggle" class="dropdown-toggle" href="#petunjuk">
+                                                <li class="dropdown-full-color dropdown-secondary">
+                                                    <a class="nav-link" href="#petunjuk">
                                                         PETUNJUK
                                                     </a>
                                                 </li>
@@ -195,53 +195,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- Demo -->
 <script src="<?php echo base_url('assets/');?>js/demos/demo-medical.js"></script>
 
-<!-- Theme Custom -->
-<script src="<?php echo base_url('assets/');?>js/custom.js"></script>
-
 <!-- Theme Initialization Files -->
 <script src="<?php echo base_url('assets/');?>js/theme.init.js"></script>
 
-<script>
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-    
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-});
+<!-- Grafik -->
+<script type="text/javascript" src="<?php echo base_url('assets/chartjs/Chart.js')?>"></script>
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#mainNav a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#mainNav li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
-</script>
+<!-- Theme Custom -->
+<script src="<?php echo base_url('assets/');?>js/custom.js"></script>
 
 </body>
 </html>
