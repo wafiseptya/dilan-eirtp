@@ -29,8 +29,9 @@ class Welcome extends MY_frontend {
 	 */
 	public function index()
 	{
-    $data["post"] = $this->news_model->getTop();
-    $data["header"] = $this->header_model->getAll();
+    $data["posts"] = $this->news_model->getTop();
+    $data["agendas"] = $this->agenda_model->getTop();
+    $data["headers"] = $this->header_model->getAll();
     
 		$data["content"] = 'demo_medical';
 		$this->view($data, true);

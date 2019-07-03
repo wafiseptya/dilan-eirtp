@@ -52,7 +52,7 @@ class Agenda_model extends CI_Model
     public function getTop()
     {
         $this->db->select('*');
-        $this->db->order_by('created_at', 'DESC');
+        $this->db->order_by('created_at', 'ASC');
         $this->db->limit('4');
 
         return $this->db->get($this->_table)->result();

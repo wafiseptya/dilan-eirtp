@@ -72,3 +72,19 @@
 .text_color{
     color : white;
 }
+
+.android-bg {
+width: 100vw;
+min-height: 400px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg);
+}
+.image-post {
+width: 100%;
+height: 175px;
+background-position: 50% 50%;
+background-repeat:   no-repeat;
+background-size:     cover;
+}

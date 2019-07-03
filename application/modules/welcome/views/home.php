@@ -229,7 +229,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-xl-12 bg-color-primary">
 				<div class="p-4" style="background-color:#5786bf;color:#ffffff;border-color:#ffffff;border-width:0px;">
 				<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
-					<img class="size-medium wp-image-869" src="assets/img/image/slide-2.jpgicon-about-300x91.png" alt="" width="300" height="91" srcset="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-200x61.png 200w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-300x91.png 300w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-400x121.png 400w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-600x182.png 600w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-768x233.png 768w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-800x242.png 800w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-1024x310.png 1024w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about-1200x364.png 1200w, https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/icon-about.png 1604w">
+					<img class="size-medium wp-image-869" src="assets/img/image/slide-2.jpgicon-about-300x91.png" alt="" width="300" height="91">
 				</h1>
 				<p class="text-center text-white">
 					DILAN E-IRTP ADALAH SEBUAH SISTEM LAYANAN PUBLIK YANG DIKEMBANGKAN PEMERINTAH KOTA YOGYAKARTA. DILAN E-IRTP ATAU DIGITALISASI LAYANAN SERTIFIKASI INDUSTRI RUMAH TANGGA PANGAN MERUPAKAN INOVASI LAYANAN PROSES PERMOHONAN SERTIFIKASI INDUSTRI RUMAH TANGGA UNTUK KATEGORI PANGAN YANG DITUJUKKAN UNTUK UMKM DI KOTA YOGYAKARTA DIBAWAH PENGELOLAAN DINAS KESEHATAN
@@ -357,7 +357,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 		<div class="d-flex justify-content-center mt-5">
-		<a href="assets/img/image/https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" ><img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg" height="400" alt="" class="w-100"></a>
+		<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" ><img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg" height="400" alt="" class="w-100"></a>
 	</div>
 	</section>
 	<section id="petunjuk" class="bg-petunjuk">

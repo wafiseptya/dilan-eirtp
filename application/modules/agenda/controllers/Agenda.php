@@ -54,6 +54,20 @@ class Agenda extends MY_frontend
         $this->admin($data, true);
     }
 
+    public function show($id = null)
+    {
+        if (!isset($id)) redirect('agenda');
+       
+        $agenda = $this->agenda_model;
+        
+        $data["agenda"] = $agenda->getById($id);
+        if (!$data["agenda"]) show_404();
+        
+        
+        $data['content'] = 'agenda';
+        $this->view($data, true);
+    }
+
     public function delete($id=null)
     {
         if (!isset($id)) show_404();

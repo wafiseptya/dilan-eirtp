@@ -58,8 +58,8 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Artikel Tables</h6>
-                <a class="dropdown-item" href="<?php echo site_url('news/add') ?>">New Artikel</a>
-                <a class="dropdown-item" href="<?php echo site_url('news') ?>">List Artikel</a>
+                <a class="dropdown-item" href="<?php echo base_url('news/add') ?>">New Artikel</a>
+                <a class="dropdown-item" href="<?php echo base_url('news') ?>">List Artikel</a>
             </div>
             </div>
         </li>

@@ -20,9 +20,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
-		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
-
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css')?>">
 		<link rel="stylesheet" href="<?php echo base_url('assets/vendor/fontawesome-free/css/all.min.css');?>">
@@ -56,59 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="<?php echo base_url('assets/vendor/modernizr/modernizr.min.js');?>"></script>
 
 		<style>
-			.btn-default {
-				background-image: linear-gradient( to top, #5aabd6, #90c9e8 );
-				color: black;
-				border-width: 2px;
-				font-size: 1em;
-			}
-			.padding {
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-			.padding-petunjuk{
-				padding: 15px 14px!important;
-			}
-			.bg-petunjuk {
-				background-color : rgba(1,88,150,0.34);
-				background-blend-mode : overlay;
-				background-position-x : 50%;
-				background-position-y : 50%;
-				box-sizing : border-box;
-			}
-			.news{
-				background-color : transparent;
-			}
-			.bg-card{
-				background-color : rgb(105, 210, 231);
-			}
-			.bg-footer{
-				background-color : #5786bf !important;
-			}
-			.bg-information {
-				color : #016399;
-			}
-			.p-information {
-				color : #000;
-			}
-      .#mainNav .active{
-        transition: 1s;
-      }
-      .android-bg {
-        width: 100vw;
-        min-height: 60vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url(https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/banner-android-revisi.jpg);
-      }
-      .image-post {
-        width: 100%;
-        height: 175px;
-        background-position: 50% 50%;
-        background-repeat:   no-repeat;
-        background-size:     cover;
-      }
+			
 		</style>
 
 </head>

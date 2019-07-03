@@ -51,6 +51,20 @@ class News extends MY_frontend
         $data["content"] = 'edit_form';
         $this->admin($data, true);
     }
+    
+    public function show($id = null)
+    {
+        if (!isset($id)) redirect('news');
+       
+        $news = $this->news_model;
+        
+
+        $data["news"] = $news->getById($id);
+        if (!$data["news"]) show_404();
+        
+        $data["content"] = 'news';
+        $this->view($data, true);
+    }
 
     public function delete($id=null)
     {
