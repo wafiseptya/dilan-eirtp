@@ -199,7 +199,7 @@
 								<li>
 									<div>
 										<h4>
-											<a class ="news" href="<?php echo site_url('agenda/show/'.$a->id) ?>"><?php echo $a->title ?> </a>
+											<a class ="news" href="<?php echo base_url('welcome/agenda/'.$a->id) ?>"><?php echo $a->title ?> </a>
 										</h4>
 										<div class="duration">
 											<span class="tribe-event-date-start"><?php echo strftime("%d %B", strtotime($a->date)) . " jam " . date("H:i", strtotime($a->start_time)) . " - " . date("H:i", strtotime($a->end_time)); ?></span>
@@ -220,7 +220,7 @@
 		<div class="container">
 			<div class="row pt-3">
 				<div class="col">
-					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-comment-dots far circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a;"></i>&nbsp;Berita dan Artikel<p></p></h2>
+					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-comment-dots far circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a;"></i>&nbsp;Berita dan Artikel<p></p></h2>				
 				</div>
 				<div>
 					<hr/>
@@ -229,7 +229,7 @@
 			<div class="row">
 				<?php foreach ($posts as $news): ?>
 				<div class="col-md-3">
-					<a href="<?php echo site_url('news/show/'.$news->id) ?>" class="text-decoration-none">
+					<a href="<?php echo base_url('welcome/news/'.$news->id) ?>" class="text-decoration-none">
 						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 							<span class="thumb-info-side-image-wrapper image-post" style="background-image:url('<?php echo base_url('upload/news/'.$news->banner) ?>');overflow: hidden">
 							</span>

@@ -36,4 +36,37 @@ class Welcome extends MY_frontend {
 		$data["content"] = 'demo_medical';
 		$this->view($data, true);
 	}
+	public function pojok()
+	{
+    $data["posts"] = $this->news_model->getTop();
+    
+		$data["content"] = 'pojok_dilan';
+		$this->view($data, true);
+	}
+	public function agenda($id = null)
+	{
+			if (!isset($id)) redirect('agenda');
+			
+			$agenda = $this->agenda_model;
+			
+			$data["agenda"] = $agenda->getById($id);
+			if (!$data["agenda"]) show_404();
+			
+			
+			$data['content'] = 'agenda';
+			$this->view($data, true);
+	}
+	public function news($id = null)
+    {
+        if (!isset($id)) redirect('news');
+       
+        $news = $this->news_model;
+        
+
+        $data["news"] = $news->getById($id);
+        if (!$data["news"]) show_404();
+        
+        $data["content"] = 'news';
+        $this->view($data, true);
+    }
 }
