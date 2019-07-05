@@ -42,6 +42,7 @@ class Header_model extends CI_Model
     {
         $header = $this->input->post();
         $this->description = $header["description"];
+        $this->category = $this->$header["category"];
         $this->image = $this->_uploadImage();
         date_default_timezone_set('Asia/Jakarta');
         $this->created_at = date('Y-m-d H:i:s');
