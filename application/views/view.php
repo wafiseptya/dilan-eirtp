@@ -53,7 +53,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="<?php echo base_url('assets/vendor/modernizr/modernizr.min.js');?>"></script>
 
 		<style>
-			
+			.button {
+            display: inline-block;
+            padding: 5;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            
+            box-shadow: 0 2px #999;
+            }
+
+            .button:hover {background-color: #3e8e41}
+
+            .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 1px #666;
+            transform: translateY(4px);
+            }
 		</style>
 
 </head>
@@ -62,31 +83,67 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div id="container">
 	<div class="body">
 
-        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
             <div class="header-body border-top-0">
                 <div class="header-top header-top-default header-top-borders border-bottom-0">
                     <div class="container h-100">
                         <div class="header-row h-100">
-                            <div class="header-column justify-content-end">
-                                <div class="header-row">
-                                    <nav class="header-nav-top">
-                                        <ul class="nav nav-pills">
-                                            <li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
-                                                <span class="pl-0">Jalan Kenari No.56 Kota Yogyakarta 55165</span>
-                                            </li>
-                                            <li class="nav-item nav-item-borders py-1">
-                                                <a href="tel:123-456-7890">Telp. (0274) 515869 Fax. (0274) 515868</a>
-                                            </li>
-                                            <li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
-                                                <span class="pl-0">Agenda</span>
-                                            </li>
-                                            <li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
-                                                <span class="pl-0">Kontak</span>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
+							<div class="container">
+								<div class="row">
+									<div class="col-4">
+										<div class="header-column justify-content-start">
+											<div class="header-row">
+												<nav class="header-nav-top">
+													<ul class="nav nav-pills">
+														<li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
+															<span class="pl-0">Jalan Kenari No.56 Kota Yogyakarta 55165</span>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="header-column justify-content-start">
+											<div class="header-row">
+												<nav class="header-nav-top">
+													<ul class="nav nav-pills">
+														<li class="nav-item nav-item-borders py-1">
+															<a href="tel:123-456-7890">Telp. (0274) 515869 Fax. (0274) 515868</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="header-column justify-content-end">
+											<div class="header-row">
+												<nav class="header-nav-top">
+													<ul class="nav nav-pills">
+														<li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
+															<span class="pl-0">Kontak</span>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="header-column justify-content-end">
+											<div class="header-row">
+												<nav class="header-nav-top">
+													<ul class="nav nav-pills">
+														<li class="nav-item nav-item-borders py-1">
+															<button class="button">DAFTAR<button class="button">REGISTER</button></button>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
                         </div>
                     </div>
                 </div>
@@ -96,7 +153,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="header-row">
                                 <div class="header-logo">
                                     <a href="demo-medical.html">
-                                        <img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png" srcset="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png 1x" height="65" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
+                                        <img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png" height="50" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
                                     </a>
                                 </div>
                             </div>

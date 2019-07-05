@@ -55,7 +55,7 @@ li {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	background: #67b7e1;
+	background: #0186B8;
 	-webkit-transition: min-height 0.3s ease;
 	transition: min-height 0.3s ease;
 	width: 100%;
@@ -230,7 +230,7 @@ li {
 	-ms-flex-align: center;
 	align-items: center;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.06);
-	min-height: 47px;
+	min-height: 40px;
 }
 
 #header .header-top.header-top-light-border-bottom {
@@ -242,7 +242,7 @@ li {
 }
 
 #header .header-top.header-top-default {
-	background: #5786bf;
+	background: #001A46;
 }
 
 #header .header-top.header-top-borders {
@@ -7702,6 +7702,7 @@ html.boxed .footer-reveal {
 	html.boxed.sticky-header-active #header .header-body {
 		width: 100%;
 		max-width: 1200px;
+		height: auto !important;
 	}
 
 	html.boxed .footer-reveal {

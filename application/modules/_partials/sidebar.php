@@ -70,6 +70,20 @@
     </div>
   </li>
 
+  <li class="nav-item <?php echo $this->uri->segment(2) == '' ? 'active': 'mitra' ?>">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#mitra" aria-expanded="true" aria-controls="mitra">
+      <i class="fas fa-fw fa-cog"></i>
+      <span>Mitra</span>
+    </a>
+    <div id="mitra" class="collapse" aria-labelledby="mitraHeading" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Mitra Tables</h6>
+        <a class="dropdown-item" href="<?php echo site_url('admin/mitra/add') ?>">New Mitra</a>
+        <a class="dropdown-item" href="<?php echo site_url('admin/mitra') ?>">List Mitra</a>
+      </div>
+    </div>
+  </li>
+
   <!-- Divider -->
   <hr class="sidebar-divider d-none d-md-block">
 

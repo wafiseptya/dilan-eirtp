@@ -171,17 +171,28 @@
 							<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
 								<div class="col-md-6 col-lg-3 isotope-item pelatihan">
 									<div class="portfolio-item">
-										<img src="assets/img/image/Pendaftaran-PKP.png" height="570" alt="" width="730">
+										<img src="assets/img/image/Pendaftaran-PKP.png"  
+											alt=""
+											data-bgposition="fixed" 
+											data-bgrepeat="no-repeat">
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-3 isotope-item nib">
 									<div class="portfolio-item">
-										<img src="assets/img/image/nib.png" height="570" alt="" width="730">
+										<img src="assets/img/image/nib.png"  
+											alt=""
+											data-bgposition="center center" 
+											data-bgfit="cover" 
+											data-bgrepeat="no-repeat">
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-3 isotope-item irtp">
 									<div class="portfolio-item">
-										<img src="assets/img/image/IRTP.png" height="570" alt="" width="730">
+										<img src="assets/img/image/IRTP.png"  
+											alt=""
+											data-bgposition="center center" 
+											data-bgfit="cover" 
+											data-bgrepeat="no-repeat">
 									</div>
 								</div>
 							</div>
@@ -216,7 +227,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section" id="berita">
+	<section id="berita">
 		<div class="container">
 			<div class="row pt-3">
 				<div class="col">
@@ -250,7 +261,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="container bg-petunjuk">
+		<section class="bg-petunjuk">
+		<div class="container">
 			<div class="row">
 				<div class="col mt-5">
 					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22">
@@ -324,7 +336,7 @@
 					<div class="border border-white">
 						<div class="row d-flex justify-content-center">
 							<div>
-								<h4 class="m-4">Jumlah Sertifikat P-IRT Diterbitkan Per Bulan</h4>
+								<h4 class="m-4">Jumlah IRTP Diberikan Sertifikat Per Bulan</h4>
 							</div>
 							<div class="w-100">
 								<canvas id="rightChart" class="m-4" style="width:330px"></canvas>
@@ -335,6 +347,7 @@
 			</div>
 		</div>
 	</section>
+	</section>
 	<section class="section" id="marketplace">
 		<div class="container pb-3">
 			<div class="row mt-4 mb-4">
@@ -343,25 +356,23 @@
 				</div>
 			</div>
 			<div class="row mb-5">
+				<?php foreach ($mitra_marketplace as $m_m): ?>
 				<div class="col">
 					<div class="d-flex justify-content-center">
-						<a href="https://dodolan.jogjakota.go.id/" target="_blank" aria-label="Program Gandeng Gendong"><img src="assets/img/image/icon-gandeng-gendong.png" width="350" height="139" alt=""></a>
-					</div>
-					<div class="d-flex justify-content-center">
-						<h2 class="font-weight-semibold text-uppercase mb-0 mt-3"> mitra sertifikasi </h2>
+						<a href="<?php echo $m_m->url ?>" target="_blank" aria-label="Program Gandeng Gendong"><img src="<?php echo base_url('upload/mitra/'.$m_m->image); ?>" width="350" height="120" alt=""></a>
 					</div>
 				</div>
+				<?php endforeach; ?>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<h2 class="font-weight-semibold mb-0 mt-3 text-center text-uppercase">mitra sertifikasi</h2>
 			</div>
 			<div class="row">
-				<div class="col d-flex justify-content-center">
-					<a href="https://e-reg.pom.go.id/" target="_blank" aria-label="Badan POM RI"><img src="assets/img/image/icon-bpom-ri.png" width="350" height="139" alt=""></a>
+			<?php foreach ($mitra_sertifikasi as $m_s): ?>
+				<div class="col d-flex justify-content-center mt-3">
+					<a href="<?php echo $m_s->url ?>" target="_blank" aria-label="Program Gandeng Gendong"><img src="<?php echo base_url('upload/mitra/'.$m_s->image); ?>" width="auto" height="120" alt=""></a>
 				</div>
-				<div class="col d-flex justify-content-center">
-					<a href="http://www.dgip.go.id/" target="_blank" aria-label="Dirjen Kekayaan Intelektual"><img src="assets/img/image/icon-haki.png" width="350" height="139" alt=""></a>
-				</div>
-				<div class="col d-flex justify-content-center">
-					<img href="http://e-lppommui.org/" target="_blank" aria-label="LPPOM Majelis Ulama Indonesia" src="assets/img/image/icon-lppom-mui.png" width="350" height="139" alt="">
-				</div>
+			<?php endforeach; ?>
 			</div>
 		</div>
 	</section>
