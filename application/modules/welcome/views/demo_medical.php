@@ -36,17 +36,19 @@
 			</div>
 			<div>
 				<div class="row mt-4">
+					<?php foreach ($advantages as $advantage): ?>
 					<div class="col-lg-4">
 						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
 							<div class="feature-box-icon" style="min-width: 4.7rem;">
-								<i style="background-color:transparent;border-color:transparent;width:25px;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-gavel fas circle-no"></i>
+								<span style="width:50px"><img src="<?php echo base_url('upload/advantage/'). $advantage->image ?> "> </span>
 							</div>
 							<div class="feature-box-info">
-								<h4 class="font-weight-semibold">Legalitas Produk</h4>
-								<p>Produk pangan yang diproduksi sudah siap dan layak untuk beredar dipasaran.</p>
+								<h4 class="font-weight-semibold"><?php echo $advantage->title ?></h4>
+								<p><?php echo $advantage->description ?></p>
 							</div>	
 						</div>
 					</div>
+					<?php endforeach; ?>
 					<div class="col-lg-4">
 						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
 							<div class="feature-box-icon" style="min-width: 4.7rem;">
@@ -117,7 +119,7 @@
 					<p class="text-center text-white">Daftar Online Pelatihan Penyuluhan Keamanan Pangan</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button type="button" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
+							<button onclick="window.location.href='https://integra.web.id/eirtp-diy/'" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
 						</div>
 					</div>
 				</div>
@@ -129,7 +131,7 @@
 					<p class="text-center text-white">Daftar Nomor Induk Berusaha (NIB) di OSS (Online Single Submission)</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button type="button" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
+							<button onclick="window.location.href='https://integra.web.id/eirtp-diy/'" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
 						</div>
 					</div>
 				</div>
@@ -141,14 +143,14 @@
 					<p class="text-center text-white">Daftar Sertifikasi Produk Pangan Industri Rumah Tangga</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button type="button" class="text-uppercase p-2 border-dark w-100 btn btn-default ">Register</button>
+							<button onclick="window.location.href='https://www.oss.go.id/oss/'" class="text-uppercase p-2 border-dark w-100 btn btn-default ">Register</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" >
+		<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" >			
 			<div class="d-flex justify-content-center mt-5 android-bg w-100 rev-slidebag" ></div>
 		</a>
 	</section>
@@ -161,15 +163,15 @@
 					</div>
 					<div class="mt-4 row">
 						<ul class="nav padding w-100 nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-							<li class="nav-item col-4 p-0 active" data-option-value=".pelatihan" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" class="active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
+							<li class="nav-item col-4 p-0 active" data-option-value=".pelatihan" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
 							<li class="nav-item col-4 p-0 " data-option-value=".nib"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-alt fas mr-3" style="font-size:17px;"></i>DAFTAR NIB</h4></a></li>
 							<li class="nav-item col-4 p-0" data-option-value=".irtp"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-check fas mr-3" style="font-size:17px;"></i>DAFTAR IRTP</h4></a></li>
 						</ul>
 					</div>
 					<div>
-						<div class="sort-destination-loader sort-destination-loader-showing">
+						
 							<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-								<div class="col-md-6 col-lg-3 isotope-item pelatihan">
+								<div class="col-md-12 isotope-item pelatihan">
 									<div class="portfolio-item">
 										<img src="assets/img/image/Pendaftaran-PKP.png"  
 											alt=""
@@ -177,7 +179,7 @@
 											data-bgrepeat="no-repeat">
 									</div>
 								</div>
-								<div class="col-md-6 col-lg-3 isotope-item nib">
+								<div class="col-md-12 isotope-item nib">
 									<div class="portfolio-item">
 										<img src="assets/img/image/nib.png"  
 											alt=""
@@ -186,7 +188,7 @@
 											data-bgrepeat="no-repeat">
 									</div>
 								</div>
-								<div class="col-md-6 col-lg-3 isotope-item irtp">
+								<div class="col-md-12 isotope-item irtp">
 									<div class="portfolio-item">
 										<img src="assets/img/image/IRTP.png"  
 											alt=""
@@ -196,7 +198,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						
 					</div>
 				</div>
 				<div class="col col-md-4 col-12 mt-5">

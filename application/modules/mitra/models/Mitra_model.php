@@ -24,8 +24,6 @@ class Mitra_model extends CI_Model {
             ['field' => 'url',
             'label' => 'Url',
             'rules' => 'required'],
-
-
         ];
     }
 

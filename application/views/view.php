@@ -52,31 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- Head Libs -->
 		<script src="<?php echo base_url('assets/vendor/modernizr/modernizr.min.js');?>"></script>
 
-		<style>
-			.button {
-            display: inline-block;
-            padding: 5;
-            font-size: 12px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            outline: none;
-            color: #fff;
-            background-color: #4CAF50;
-            border: none;
-            
-            box-shadow: 0 2px #999;
-            }
-
-            .button:hover {background-color: #3e8e41}
-
-            .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 1px #666;
-            transform: translateY(4px);
-            }
-		</style>
-
 </head>
 <body>
 
@@ -152,8 +127,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="header-column">
                             <div class="header-row">
                                 <div class="header-logo">
-                                    <a href="demo-medical.html">
-                                        <img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/06/logo-dilan-1x.png" height="50" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
+                                    <a href="/">
+                                        <img src="assets/img/image/logo-dilan-1x.png" height="50" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
                                     </a>
                                 </div>
                             </div>
@@ -165,7 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <nav class="collapse" id="nav-bar">
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link active" href="">
+                                                    <a class="nav-link active" href="/">
                                                         BERANDA
                                                     </a>
                                                 </li>

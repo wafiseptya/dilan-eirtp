@@ -89,3 +89,25 @@ background-size:     cover;
 .ck-editor__editable {
   min-height: 200px!important;
 }
+.button {
+    display: inline-block;
+    padding: 5;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    
+    box-shadow: 0 2px #999;
+    }
+
+    .button:hover {background-color: #3e8e41}
+
+    .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+    }

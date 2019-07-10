@@ -23,7 +23,7 @@
 					<?php endforeach; ?>	
 				</div>
 				<div class="row">
-					<div class="col-4">
+					<div class="col col-md-4 col-12">
 						<a href="#" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 								<span class="thumb-info-side-image-wrapper">
@@ -38,7 +38,7 @@
 							</span>
 						</a>
 					</div>
-					<div class="col-4">
+					<div class="col col-md-4 col-12">
 						<a href="#" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 								<span class="thumb-info-side-image-wrapper ">
@@ -53,7 +53,7 @@
 							</span>
 						</a>
 					</div>
-					<div class="col-4">
+					<div class="col col-md-4 col-12">
 						<a href="#" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 								<span class="thumb-info-side-image-wrapper">
