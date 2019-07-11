@@ -12,6 +12,7 @@ class Welcome extends MY_frontend {
       $this->load->model("agenda/agenda_model");
       $this->load->model("mitra/mitra_model");
       $this->load->model("advantage/advantage_model");
+      $this->load->model("footer/footer_model");
   }
 
 	/**
@@ -37,6 +38,7 @@ class Welcome extends MY_frontend {
 		$data["mitra_marketplace"] = $this->mitra_model->getByCategoryMarketplace();
 		$data["mitra_sertifikasi"] = $this->mitra_model->getByCategorySertifikasi();
 		$data["advantages"] = $this->advantage_model->getAll();
+		$data["footer"] = $this->footer_model->getById();
 		
 		$data["content"] = 'demo_medical';
 		$this->view($data, true);

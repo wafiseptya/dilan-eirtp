@@ -384,19 +384,19 @@
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">DINAS KESEHATAN KOTA YOGYAKARTA</h4>
 					<div class="mt-3">
-						<p class="text-white">Jalan Kenari No.56 Kota Yogyakarta (Komplek Balaikota Yogyakarta) Kodepos 55165</p>
+						<p class="text-white"><?php echo $footer->address ?></p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">Telp. (0274) 515869</p>
+						<p class="mb-0 text-white">Telp. <?php echo $footer->telp ?></p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">Fax. (0274) 515868 </p>
+						<p class="mb-0 text-white">Fax. <?php echo $footer->fax ?> </p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">WhatsApp. 0-823-1404-0407</p>
+						<p class="mb-0 text-white">WhatsApp. <?php echo $footer->whatsapp ?></p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">Email: regulasi.dinkesyk@gmail.com</p>
+						<p class="mb-0 text-white">Email: <?php echo $footer->email ?></p>
 					</div>
 				</div>
 				<div class="col col-md-4 col-12 mt-3">

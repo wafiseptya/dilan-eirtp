@@ -12,8 +12,45 @@ class Footer_model extends CI_Model {
     public $location;
     public $apps;
 
+    public function rules(){
+        return[
+            ['field' => 'address',
+            'label' => 'Address',
+            'rules' => 'required'],
+                        
+            ['field' => 'telp',
+            'label' => 'Telp',
+            'rules' => 'required'],
+            
+            ['field' => 'fax',
+            'label' => 'Fax',
+            'rules' => 'required'],
+
+            ['field' => 'whatsapp',
+            'label' => 'Whatsapp',
+            'rules' => 'required'],
+
+            ['field' => 'email',
+            'label' => 'Email',
+            'rules' => 'required'],
+
+            ['field' => 'location',
+            'label' => 'Location',
+            'rules' => 'required'],
+
+            ['field' => 'apps',
+            'label' => 'Apps',
+            'rules' => 'required'],
+
+        ];
+    }
+
     public function getAll(){
         return $this->get($this->_table)->result();
+    }
+
+    public function getById(){
+        return $this->db->get_where($this->_table, array('id' => 1))->row();
     }
 
     public function update(){
@@ -30,5 +67,5 @@ class Footer_model extends CI_Model {
     }
 }
 
-
 ?>
+
