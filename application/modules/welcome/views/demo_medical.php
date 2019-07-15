@@ -40,7 +40,7 @@
 					<div class="col-lg-4">
 						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
 							<div class="feature-box-icon" style="min-width: 4.7rem;">
-								<span style="width:50px"><img src="<?php echo base_url('upload/advantage/'). $advantage->image ?> "> </span>
+								<span style="width:50px"><img style="color:#03a9f4" src="<?php echo base_url('upload/advantage/'). $advantage->image ?> "> </span>
 							</div>
 							<div class="feature-box-info">
 								<h4 class="font-weight-semibold"><?php echo $advantage->title ?></h4>
@@ -49,63 +49,6 @@
 						</div>
 					</div>
 					<?php endforeach; ?>
-					<div class="col-lg-4">
-						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-							<div class="feature-box-icon" style="min-width: 4.7rem;">
-								<i style="background-color:transparent;border-color:transparent;height:auto;width: 25px;line-height:normal;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-thumbs-up far circle-no"></i>
-							</div>
-							<div class="feature-box-info">
-								<h4 class="font-weight-semibold">Produk Diakui & Terpercaya</h4>
-								<p>Para konsumen akan lebih percaya dengan Produk</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-							<div class="feature-box-icon" style="min-width: 4.7rem;">
-								<i style="background-color:transparent;border-color:transparent;height:auto;width: 25px;line-height:normal;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-cart-plus fas circle-no"></i>
-							</div>
-							<div class="feature-box-info">
-								<h4 class="font-weight-semibold">Produk Bisa Masuk Ritel Besar</h4>
-								<p class="mb-0">Produk bisa menembus pasar yang lebih berkelas yaitu masuk ritel-ritel besar.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-4">
-					<div class="col-lg-4">
-						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-							<div class="feature-box-icon" style="min-width: 4.7rem;">
-								<i style="background-color:transparent;border-color:transparent;height:auto;width: 25px;line-height:normal;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-money-bill-alt fas circle-no"></i>
-							</div>
-							<div class="feature-box-info">
-								<h4 class="font-weight-semibold">Meningkatkan Nilai Jual Produk</h4>
-								<p>Meningkatkan nilai jual produk dimata konsumen</p>
-							</div>	
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-							<div class="feature-box-icon" style="min-width: 4.7rem;">
-								<i style="background-color:transparent;border-color:transparent;height:auto;width: 25px;line-height:normal;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-handshake far circle-no"></i>
-							</div>
-							<div class="feature-box-info">
-								<h4 class="font-weight-semibold">Pendampingan Tanaga Ahli</h4>
-								<p>Dibantu pendampingan untuk meningkatkan kapasitas</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-							<div class="feature-box-icon" style="min-width: 4.7rem;">
-								<i style="background-color:transparent;border-color:transparent;height:auto;width: 25px;line-height:normal;color:#03a9f4;font-size:25px;" class="fontawesome-icon fa-bullhorn fas circle-no"></i>
-							</div>
-							<div class="feature-box-info">
-								<h4 class="font-weight-semibold">Dibantu Promosi</h4>
-								<p>Direkomendasikan dan Dibantu Promosi di berbagai marketplace</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
