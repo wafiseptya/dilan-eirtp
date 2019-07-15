@@ -19,7 +19,7 @@
         <div class="form-group">
             <label for="address">Address*</label>
             <input class="form-control <?php echo form_error('address') ? 'is-invalid':'' ?>"
-            type="text" name="address" value="<?php echo $footer->address ?>" placeholder="Judul" />
+            type="text" name="address" value="<?php echo $footer->address ?>" placeholder="Alamat" />
             <div class="invalid-feedback">
             <?php echo form_error('address') ?>
           </div>
@@ -28,7 +28,7 @@
         <div class="form-group">
             <label for="telp">Telp*</label>
             <input class="form-control <?php echo form_error('telp') ? 'is-invalid':'' ?>"
-            type="text" name="telp" value="<?php echo $footer->telp ?>" placeholder="Judul" />
+            type="text" name="telp" value="<?php echo $footer->telp ?>" placeholder="Nomor Telpon" />
             <div class="invalid-feedback">
             <?php echo form_error('telp') ?>
           </div>
@@ -37,7 +37,7 @@
         <div class="form-group">
             <label for="fax">Fax*</label>
             <input class="form-control <?php echo form_error('fax') ? 'is-invalid':'' ?>"
-            type="text" name="fax" value="<?php echo $footer->fax ?>" placeholder="Judul" />
+            type="text" name="fax" value="<?php echo $footer->fax ?>" placeholder="Nomor Fax" />
             <div class="invalid-feedback">
             <?php echo form_error('fax') ?>
           </div>
@@ -46,7 +46,7 @@
         <div class="form-group">
             <label for="whatsapp">Whatsapp*</label>
             <input class="form-control <?php echo form_error('whatsapp') ? 'is-invalid':'' ?>"
-            type="text" name="whatsapp" value="<?php echo $footer->whatsapp ?>" placeholder="Judul" />
+            type="text" name="whatsapp" value="<?php echo $footer->whatsapp ?>" placeholder="Nomor WhatsApp" />
             <div class="invalid-feedback">
             <?php echo form_error('whatsapp') ?>
           </div>
@@ -55,7 +55,7 @@
         <div class="form-group">
             <label for="email">Email*</label>
             <input class="form-control <?php echo form_error('email') ? 'is-invalid':'' ?>"
-            type="text" name="email" value="<?php echo $footer->email ?>" placeholder="Judul" />
+            type="text" name="email" value="<?php echo $footer->email ?>" placeholder="Email" />
             <div class="invalid-feedback">
             <?php echo form_error('email') ?>
           </div>
@@ -63,8 +63,8 @@
 
         <div class="form-group">
             <label for="location">Location*</label>
-            <input class="form-control <?php echo form_error('location') ? 'is-invalid':'' ?>"
-            type="text" name="location" value="<?php echo $footer->location ?>" placeholder="Judul" />
+            <textarea class="form-control <?php echo form_error('location') ? 'is-invalid':'' ?>"
+            type="text" name="location" placeholder="Embed Lokasi"><?php echo htmlspecialchars($footer->location) ?></textarea>
             <div class="invalid-feedback">
             <?php echo form_error('location') ?>
           </div>
@@ -73,7 +73,7 @@
         <div class="form-group">
             <label for="email">Link App*</label>
             <input class="form-control <?php echo form_error('apps') ? 'is-invalid':'' ?>"
-            type="text" name="apps" value="<?php echo $footer->apps ?>" placeholder="Judul" />
+            type="text" name="apps" value="<?php echo $footer->apps ?>" placeholder="Link Apps" />
             <div class="invalid-feedback">
             <?php echo form_error('apps') ?>
           </div>

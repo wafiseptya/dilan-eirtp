@@ -1,9 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Footer extends MY_frontend {
+class About extends MY_frontend {
     public function __construct(){
         parent::__construct();
-        $this->load->model("footer_model");
+        $this->load->model("about_model");
         $this->load->library(['ion_auth', 'form_validation']);
 
         if(!$this->ion_auth->logged_in()){
@@ -14,23 +14,23 @@ class Footer extends MY_frontend {
     }
 
     public function index(){
-        $data["footer"] = $this->footer_model->getById();
+        $data["about"] = $this->about_model->getById();
         $data["content"] = 'info';
         $this->admin($data, true);
     }
 
     public function edit($id = null){
-        $footer = $this->footer_model;
+        $about = $this->about_model;
         $validation = $this->form_validation;
-        $validation->set_rules($footer->rules());
+        $validation->set_rules($about->rules());
 
         if($validation->run()){
-            $footer->update();
+            $about->update();
             $this->session->set_flashdata('success', 'Berhasil diperbaharui');
         }
 
-        $data["footer"] = $footer->getById();
-        if(!$data["footer"]) show_404();
+        $data["about"] = $about->getById();
+        if(!$data["about"]) show_404();
 
         $data["content"] = 'edit_info';
         $this->admin($data, true);

@@ -49,6 +49,19 @@
         <hr class="sidebar-divider">
 
         <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'about' ? 'active': '' ?>">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#about" aria-expanded="true" aria-controls="about">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>About</span>
+            </a>
+            <div id="about" class="collapse" aria-labelledby="aboutHeading" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">About Tables</h6>
+                <a class="dropdown-item" href="<?php echo base_url('about') ?>">About</a>
+            </div>
+            </div>
+        </li>
+
         <li class="nav-item <?php echo $this->uri->segment(1) == 'news' ? 'active': '' ?>">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               <i class="fas fa-fw fa-cog"></i>
@@ -59,6 +72,20 @@
                   <h6 class="collapse-header">Artikel Tables</h6>
                   <a class="dropdown-item" href="<?php echo base_url('news/add') ?>">New Artikel</a>
                   <a class="dropdown-item" href="<?php echo base_url('news') ?>">List Artikel</a>
+              </div>
+            </div>
+        </li>
+
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'agenda' ? 'active': '' ?>">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#agenda" aria-expanded="true" aria-controls="agenda">
+              <i class="fas fa-fw fa-cog"></i>
+              <span>Agenda</span>
+            </a>
+            <div id="agenda" class="collapse" aria-labelledby="headingAgenda" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
+                  <h6 class="collapse-header">Agenda Tables</h6>
+                  <a class="dropdown-item" href="<?php echo base_url('agenda/add') ?>">New Agenda</a>
+                  <a class="dropdown-item" href="<?php echo base_url('agenda') ?>">List Agenda</a>
               </div>
             </div>
         </li>
@@ -77,16 +104,55 @@
             </div>
         </li>
 
-        <li class="nav-item <?php echo $this->uri->segment(1) == 'agenda' ? 'active': '' ?>">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#agenda" aria-expanded="true" aria-controls="agenda">
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'footer' ? 'active': '' ?>">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#footer" aria-expanded="true" aria-controls="footer">
             <i class="fas fa-fw fa-cog"></i>
-            <span>Agenda</span>
+            <span>Footer</span>
             </a>
-            <div id="agenda" class="collapse" aria-labelledby="agendaHeading" data-parent="#accordionSidebar">
+            <div id="footer" class="collapse" aria-labelledby="footerHeading" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Agenda Tables</h6>
-                <a class="dropdown-item" href="<?php echo base_url('agenda/add') ?>">New Agenda</a>
-                <a class="dropdown-item" href="<?php echo base_url('agenda') ?>">List Agenda</a>
+                <h6 class="collapse-header">Footer Tables</h6>
+                <a class="dropdown-item" href="<?php echo base_url('footer') ?>">Footer</a>
+            </div>
+            </div>
+        </li>
+
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'mitra' ? 'active': '' ?>">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#mitra" aria-expanded="true" aria-controls="mitra">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Mitra</span>
+            </a>
+            <div id="mitra" class="collapse" aria-labelledby="mitraHeading" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Mitra Tables</h6>
+                <a class="dropdown-item" href="<?php echo base_url('mitra/add') ?>">New Mitra</a>
+                <a class="dropdown-item" href="<?php echo base_url('mitra') ?>">List Mitra</a>
+            </div>
+            </div>
+        </li>
+
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'advantage' ? 'active': '' ?>">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#advantage" aria-expanded="true" aria-controls="advantage">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Keunggulan</span>
+            </a>
+            <div id="advantage" class="collapse" aria-labelledby="advantageHeading" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Keunggulan Tables</h6>
+                <a class="dropdown-item" href="<?php echo base_url('advantage') ?>">List Keunggulan</a>
+            </div>
+            </div>
+        </li>
+
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'statistik' ? 'active': '' ?>">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#statistik" aria-expanded="true" aria-controls="statistik">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Statistik</span>
+            </a>
+            <div id="statistik" class="collapse" aria-labelledby="statistikHeading" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Statistik Tables</h6>
+                <a class="dropdown-item" href="<?php echo base_url('statistik') ?>">List Statistik</a>
             </div>
             </div>
         </li>

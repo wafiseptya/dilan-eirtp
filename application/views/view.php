@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="<?php echo base_url('assets/vendor/simple-line-icons/css/simple-line-icons.min.css');?>">
 		<link rel="stylesheet" href="<?php echo base_url('assets/vendor/owl.carousel/assets/owl.carousel.min.css');?>">
 		<link rel="stylesheet" href="<?php echo base_url('assets/vendor/owl.carousel/assets/owl.theme.default.min.css');?>">
-		<link rel="stylesheet" href="<?php echo base_url('assets/vendor/magnific-popup/magnific-popup.min.css"');?>>
+		<link rel="stylesheet" href="<?php echo base_url('assets/vendor/magnific-popup/magnific-popup.min.css');?>">
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="<?php echo base_url('assets/css/theme.css');?>">

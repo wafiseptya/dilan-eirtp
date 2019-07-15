@@ -13,6 +13,10 @@ class Welcome extends MY_frontend {
       $this->load->model("mitra/mitra_model");
       $this->load->model("advantage/advantage_model");
       $this->load->model("footer/footer_model");
+      $this->load->model("about/about_model");
+      $this->load->model("statistik/statistik_model");
+      $this->load->model("statistik/statistik_jumlah_model");
+      // $this->load->model("statistik/statistik_model");
   }
 
 	/**
@@ -34,11 +38,18 @@ class Welcome extends MY_frontend {
 	{
     $data["posts"] = $this->news_model->getTop();
     $data["agendas"] = $this->agenda_model->getTop();
-		$data["headers"] = $this->header_model->getAll();
+    $data["header_top"] = $this->header_model->getHeader();
+    $data["header_main"] = $this->header_model->getMain();
+    $data["header_petunjuk"] = $this->header_model->getPetunjuk();
 		$data["mitra_marketplace"] = $this->mitra_model->getByCategoryMarketplace();
 		$data["mitra_sertifikasi"] = $this->mitra_model->getByCategorySertifikasi();
 		$data["advantages"] = $this->advantage_model->getAll();
 		$data["footer"] = $this->footer_model->getById();
+		$data["about"] = $this->about_model->getById();
+		$data["statistik"] = $this->statistik_model->getStat();
+		$data["irtp"] = $this->statistik_jumlah_model->getStatFrontIRTP();
+		$data["pirt"] = $this->statistik_jumlah_model->getStatFrontPIRT();
+		// $data["statistik"] = $this->statistik_model->getStat();
 		
 		$data["content"] = 'demo_medical';
 		$this->view($data, true);

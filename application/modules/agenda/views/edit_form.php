@@ -9,11 +9,11 @@
 
   <div class="card mb-3">
     <div class="card-header">
-      <a href="<?php echo base_url('admin/agenda/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+      <a href="<?php echo base_url('agenda/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
     </div>
     <div class="card-body">
 
-      <form action="<?php base_url('admin/agenda/edit') ?>" method="post" enctype="multipart/form-data" >
+      <form action="<?php base_url('agenda/edit') ?>" method="post" enctype="multipart/form-data" >
 
         <input type="hidden" name="id" value="<?php echo $agenda->id?>" />
         <input type="hidden" name="created_at" value="<?php echo $agenda->created_at?>" />

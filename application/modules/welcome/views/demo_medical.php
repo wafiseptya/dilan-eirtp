@@ -2,10 +2,10 @@
 	<div id="home" class="slider-container rev_slider_wrapper" style="height: 650px;">
 		<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 450, 'disableProgressBar': 'on', 'navigation': {'bullets': {'enable': true, 'direction': 'vertical', 'h_align': 'right', 'v_align': 'center', 'space': 5}, 'arrows': {'enable': false}}}">
 			<ul>
-				<?php foreach ($headers as $header): ?>
+				<?php foreach ($header_top as $top): ?>
 					<li data-transition="fade">
-						<img src="<?php echo base_url('upload/header/'.$header->image) ?>"  
-							alt="<?php echo base_url('upload/header/'.$header->description) ?>"
+						<img src="<?php echo base_url('upload/header/'.$top->image) ?>"  
+							alt="<?php echo base_url('upload/header/'.$top->description) ?>"
 							data-bgposition="center center" 
 							data-bgfit="cover" 
 							data-bgrepeat="no-repeat"
@@ -21,10 +21,10 @@
 				<div class="col-xl-12 bg-color-primary">
 					<div class="p-4" style="background-color:#5786bf;color:#ffffff;border-color:#ffffff;border-width:0px;">
 						<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
-							<img class="size-medium wp-image-869" src="assets/img/image/icon-about-300x91.png" alt="" width="300" height="91">
+							<img class="size-medium wp-image-869" src="<?php echo base_url('upload/about/'.$about->image) ?>" alt="" width="300" height="91">
 						</h1>
 						<p class="text-center text-white">
-							DILAN E-IRTP ADALAH SEBUAH SISTEM LAYANAN PUBLIK YANG DIKEMBANGKAN PEMERINTAH KOTA YOGYAKARTA. DILAN E-IRTP ATAU DIGITALISASI LAYANAN SERTIFIKASI INDUSTRI RUMAH TANGGA PANGAN MERUPAKAN INOVASI LAYANAN PROSES PERMOHONAN SERTIFIKASI INDUSTRI RUMAH TANGGA UNTUK KATEGORI PANGAN YANG DITUJUKKAN UNTUK UMKM DI KOTA YOGYAKARTA DIBAWAH PENGELOLAAN DINAS KESEHATAN
+              <?php echo $about->content ?>
 						</p>
 					</div>
 				</div>
@@ -151,7 +151,7 @@
 		</div>
 		
 		<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" >			
-			<div class="d-flex justify-content-center mt-5 android-bg w-100 rev-slidebag" ></div>
+			<div class="d-flex justify-content-center mt-5 android-bg w-100 rev-slidebag" style="background-image: url('<?php echo base_url('upload/header/'.$header_main->image) ?>');"></div>
 		</a>
 	</section>
 	<section id="petunjuk" class="bg-petunjuk">
@@ -163,40 +163,25 @@
 					</div>
 					<div class="mt-4 row">
 						<ul class="nav padding w-100 nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-							<li class="nav-item col-4 p-0 active" data-option-value=".pelatihan" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
-							<li class="nav-item col-4 p-0 " data-option-value=".nib"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-alt fas mr-3" style="font-size:17px;"></i>DAFTAR NIB</h4></a></li>
-							<li class="nav-item col-4 p-0" data-option-value=".irtp"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" href="#"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-check fas mr-3" style="font-size:17px;"></i>DAFTAR IRTP</h4></a></li>
+              <?php foreach ($header_petunjuk as $judul): ?>
+                <li class="nav-item col-4 p-0" data-option-value=".<?php echo str_replace(' ', '', $judul->description) ?>" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i><?php echo $judul->description ?></h4></a></li>
+              <?php endforeach; ?>
 						</ul>
 					</div>
 					<div>
-						
+
 							<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-								<div class="col-md-12 isotope-item pelatihan">
+                <?php foreach ($header_petunjuk as $img_petunjuk): ?>
+                <div class="col-md-4 isotope-item <?php echo str_replace(' ', '', $img_petunjuk->description) ?>">
 									<div class="portfolio-item">
-										<img src="assets/img/image/Pendaftaran-PKP.png"  
-											alt=""
-											data-bgposition="fixed" 
-											data-bgrepeat="no-repeat">
-									</div>
-								</div>
-								<div class="col-md-12 isotope-item nib">
-									<div class="portfolio-item">
-										<img src="assets/img/image/nib.png"  
+										<img src="<?php echo base_url('upload/header/'.$img_petunjuk->image) ?>"  
 											alt=""
 											data-bgposition="center center" 
-											data-bgfit="cover" 
+											data-bgfit="contain"
 											data-bgrepeat="no-repeat">
 									</div>
 								</div>
-								<div class="col-md-12 isotope-item irtp">
-									<div class="portfolio-item">
-										<img src="assets/img/image/IRTP.png"  
-											alt=""
-											data-bgposition="center center" 
-											data-bgfit="cover" 
-											data-bgrepeat="no-repeat">
-									</div>
-								</div>
+                <?php endforeach; ?>
 							</div>
 						
 					</div>
@@ -281,12 +266,12 @@
 					</div>
 					<div>
 						<h2 class="font-weight-bold d-flex justify-content-center mb-0 bg-information">
-							<span class="display-counter mt-1" data-value="78" data-direction="up" data-decimals="0">78</span><span class="unit mt-1"> UMKM</span>
+							<span class="display-counter mt-1 mr-1" data-value="<?php echo $statistik[0]->value ?>" data-direction="up" data-decimals="0">78</span><span class="unit mt-1"> UMKM</span>
 						</h2>
 					</div>
 					<div>
 						<p class="font-weight-bold text-center p-information">
-							<span> Peserta Pelatihan Penyuluhan Keamanan Pangan Tahun 2019</span>
+							<span> Peserta Pelatihan Penyuluhan Keamanan Pangan Tahun <?php echo $statistik[0]->year ?></span>
 						</p>
 					</div>
 				</div>
@@ -296,12 +281,12 @@
 					</div>
 					<div>
 						<h2 class="font-weight-bold d-flex justify-content-center mb-0 bg-information">
-							<span class="display-counter mt-1" data-value="23" data-direction="up" data-decimals="0">23</span><span class="unit mt-1"> UMKM</span>
+							<span class="display-counter mt-1 mr-1" data-value="<?php echo $statistik[1]->value ?>" data-direction="up" data-decimals="0">23</span><span class="unit mt-1"> UMKM</span>
 						</h2>
 					</div>
 					<div>
 						<p class="font-weight-bold text-center p-information">
-							Permohonan IRTP yang Disetujui Tahun 2019
+							Permohonan IRTP yang Disetujui Tahun <?php echo $statistik[1]->year ?>
 						</p>
 					</div>
 				</div>
@@ -311,7 +296,7 @@
 					</div>
 					<div>
 						<h2 class="font-weight-bold d-flex justify-content-center pb-0 mb-0 bg-information">
-							<span class="display-counter mt-1" data-value="593" data-direction="up" data-decimals="0">593</span><span class="unit mt-1"> UMKM</span>
+							<span class="display-counter mt-1 mr-1" data-value="<?php echo $statistik[2]->value ?>" data-direction="up" data-decimals="0">593</span><span class="unit mt-1"> UMKM</span>
 						</h2>
 					</div>
 					<div>
@@ -402,13 +387,13 @@
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">PETA LOKASI</h4>
 					<div>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9042544645213!2d110.38823011415445!3d-7.799960879585036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577caaa817ed%3A0x1e4bc5c6b6a26619!2sDinas+Kesehatan+Kota+Yogyakarta!5e0!3m2!1sid!2sid!4v1561953491673!5m2!1sid!2sid" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <?php echo $footer->location ?>
 					</div>
 				</div>
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">DOWNLOAD APLKASI JSS</h4>
 					<div>
-						<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" >
+						<a href="<?php echo $footer->apps ?>" target="_blank" >
 							<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/en_badge_web_generic-e1558684699870.png" width="350" height="110" alt="Play Store">
 						</a>
 					</div>

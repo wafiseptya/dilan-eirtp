@@ -23,7 +23,9 @@ class Header extends MY_frontend
 
     public function index()
     {
-        $data["header"] = $this->header_model->getAll();
+        $data["header_top"] = $this->header_model->getHeader();
+        $data["header_main"] = $this->header_model->getMain();
+        $data["header_petunjuk"] = $this->header_model->getPetunjuk();
         $data["content"] = 'list';
         $this->admin($data, true);
     }

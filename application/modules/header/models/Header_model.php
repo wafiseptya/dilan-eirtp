@@ -32,6 +32,31 @@ class Header_model extends CI_Model
 
         return $this->db->get($this->_table)->result();
     }
+
+    public function getHeader()
+    {
+        $this->db->select('*');
+        $this->db->where('category', 1);
+        $this->db->order_by('created_at', 'ASC');
+        $this->db->limit('4');
+
+        return $this->db->get($this->_table)->result();
+    }
+
+    public function getMain()
+    {
+        return $this->db->get_where($this->_table, ["category" => 2])->row();
+    }
+
+    public function getPetunjuk()
+    {
+        $this->db->select('*');
+        $this->db->where('category', 3);
+        $this->db->order_by('created_at', 'ASC');
+        $this->db->limit('4');
+
+        return $this->db->get($this->_table)->result();
+    }
     
     public function getById($id)
     {
@@ -42,7 +67,7 @@ class Header_model extends CI_Model
     {
         $header = $this->input->post();
         $this->description = $header["description"];
-        $this->category = $this->$header["category"];
+        $this->category = $header["category"];
         $this->image = $this->_uploadImage();
         date_default_timezone_set('Asia/Jakarta');
         $this->created_at = date('Y-m-d H:i:s');
@@ -54,6 +79,7 @@ class Header_model extends CI_Model
         $header = $this->input->post();
         $this->id = $header["id"];
         $this->description = $header["description"];
+        $this->category = $header["category"];
         
         // banner
         if (!empty($_FILES["image"]["name"])) {
