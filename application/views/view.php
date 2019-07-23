@@ -65,52 +65,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="header-row h-100">
 							<div class="container">
 								<div class="row">
-									<div class="col-4">
+									<div class="col-7 pl-0">
 										<div class="header-column justify-content-start">
 											<div class="header-row">
 												<nav class="header-nav-top">
 													<ul class="nav nav-pills">
 														<li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
-															<span class="pl-0">Jalan Kenari No.56 Kota Yogyakarta 55165</span>
+															<span class="pl-0">Jl. Kenari No.56 Kota Yogyakarta 55165 | Telp. (0274) 515869 Fax. (0274) 515868</span>
 														</li>
 													</ul>
 												</nav>
 											</div>
 										</div>
 									</div>
-									<div class="col-3">
-										<div class="header-column justify-content-start">
-											<div class="header-row">
-												<nav class="header-nav-top">
-													<ul class="nav nav-pills">
-														<li class="nav-item nav-item-borders py-1">
-															<a href="tel:123-456-7890">Telp. (0274) 515869 Fax. (0274) 515868</a>
-														</li>
-													</ul>
-												</nav>
-											</div>
-										</div>
-									</div>
-									<div class="col-2">
+									<div class="col-5 pr-0">
 										<div class="header-column justify-content-end">
 											<div class="header-row">
 												<nav class="header-nav-top">
 													<ul class="nav nav-pills">
 														<li class="nav-item nav-item-borders py-1 d-none d-sm-inline-flex">
-															<span class="pl-0">Kontak</span>
-														</li>
-													</ul>
-												</nav>
-											</div>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="header-column justify-content-end">
-											<div class="header-row">
-												<nav class="header-nav-top">
-													<ul class="nav nav-pills">
-														<li class="nav-item nav-item-borders py-1">
-															<button class="button">DAFTAR<button class="button">REGISTER</button></button>
+															<a href="#">Kontak</a>
+															
 														</li>
 													</ul>
 												</nav>
@@ -128,7 +103,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="header-row">
                                 <div class="header-logo">
                                     <a href="/">
-                                        <img src="assets/img/image/logo-dilan-1x.png" height="50" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
+                                        <img src="<?php echo base_url('assets');?>/img/image/logo-dilan-1x.png" height="50" alt="DILAN E-IRTP | Digitalisasi Layanan E-IRTP Logo" retina_logo_url="" class="fusion-sticky-logo">
                                     </a>
                                 </div>
                             </div>
@@ -165,7 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="<?php echo site_url('welcome/pojok') ?>">
+                                                    <a class="nav-link" href="<?php echo base_url('pojok-dilan') ?>">
                                                         POJOK DILAN
                                                     </a>
                                                 </li>

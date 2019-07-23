@@ -11328,7 +11328,7 @@ html.boxed .slider-container {
 }
 
 .nav-tabs li .nav-link, .nav-tabs li .nav-link:hover {
-	background: #f7f7f7;
+	background-color : transparent;
 	border-bottom: none;
 	border-left: 1px solid #EEE;
 	border-right: 1px solid #EEE;

@@ -55,3 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 // admin page
 $route['admin'] = 'dashboard';
+$route['kegiatan/(:num)'] = 'welcome/agenda/$1';
+$route['berita/(:num)'] = 'welcome/news/$1';
+$route['pojok-dilan'] = 'welcome/pojok';

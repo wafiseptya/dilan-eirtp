@@ -135,3 +135,10 @@ function onScroll(event){
         }
     });
 }
+
+$('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+  $('#myTab li a').removeClass("active");
+            currLink.addClass("active");
+})

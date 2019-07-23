@@ -56,33 +56,35 @@ class Welcome extends MY_frontend {
 	}
 	public function pojok()
 	{
-    $data["posts"] = $this->news_model->getTop();
+		$data["posts"] = $this->news_model->getTop();
+		$data["footer"] = $this->footer_model->getById();
     
 		$data["content"] = 'pojok_dilan';
 		$this->view($data, true);
 	}
 	public function agenda($id = null)
 	{
-			if (!isset($id)) redirect('agenda');
+			if (!isset($id)) redirect('welcome');
 			
 			$agenda = $this->agenda_model;
 			
 			$data["agenda"] = $agenda->getById($id);
 			if (!$data["agenda"]) show_404();
-			
+			$data["footer"] = $this->footer_model->getById();
 			
 			$data['content'] = 'agenda';
 			$this->view($data, true);
 	}
 	public function news($id = null)
     {
-        if (!isset($id)) redirect('news');
+        if (!isset($id)) redirect('welcome');
        
         $news = $this->news_model;
         
 
         $data["news"] = $news->getById($id);
-        if (!$data["news"]) show_404();
+		if (!$data["news"]) show_404();
+		$data["footer"] = $this->footer_model->getById();
         
         $data["content"] = 'news';
         $this->view($data, true);
