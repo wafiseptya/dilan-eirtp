@@ -29,7 +29,8 @@ class News_model extends CI_Model
 
     public function getAll()
     {
-        $this->db->join('news_category', 'news_category.id = news.cat_id');
+        $this->db->select('news.*, news_category.cat_title, news_category.cat_description'); 
+        $this->db->join('news_category', 'news_category.id = news.cat_id'); 
         return $this->db->get($this->_table)->result();
     }
 

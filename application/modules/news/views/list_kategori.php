@@ -22,10 +22,10 @@
             <?php foreach ($category as $row): ?>
             <tr>
               <td width="150">
-                <?php echo $row->title ?>
+                <?php echo $row->cat_title ?>
               </td>
               <td>
-                <?php echo $row->description ?></td>
+                <?php echo $row->cat_description ?></td>
               <td width="250">
                 <a href="<?php echo base_url('news/kategori/edit/'.$row->id) ?>"
                 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>

@@ -5,17 +5,17 @@ class Kategori_model extends CI_Model
     private $_table = "news_category";
 
     public $id;
-    public $title;
-    public $description;
+    public $cat_title;
+    public $cat_description;
 
     public function rules()
     {
         return [
-            ['field' => 'title',
+            ['field' => 'cat_title',
             'label' => 'Title',
             'rules' => 'required'],
 
-            ['field' => 'description',
+            ['field' => 'cat_description',
             'label' => 'Description',
             'rules' => 'required'],
         
@@ -26,12 +26,17 @@ class Kategori_model extends CI_Model
     {
         return $this->db->get($this->_table)->result();
     }
+    
+    public function getById($id)
+    {
+        return $this->db->get_where($this->_table, ["id" => $id])->row();
+    }
 
     public function save()
     {
         $category = $this->input->post();
-        $this->title = $category["title"];
-        $this->description = $category["description"];
+        $this->cat_title = $category["cat_title"];
+        $this->cat_description = $category["cat_description"];
         $this->db->insert($this->_table, $this);
     }
 
@@ -39,8 +44,8 @@ class Kategori_model extends CI_Model
     {
         $category = $this->input->post();
         $this->id = $category["id"];
-        $this->title = $category["title"];
-        $this->description = $category["description"];
+        $this->cat_title = $category["cat_title"];
+        $this->cat_description = $category["cat_description"];
         $this->db->update($this->_table, $this, array('id' => $category['id']));
     }
 
