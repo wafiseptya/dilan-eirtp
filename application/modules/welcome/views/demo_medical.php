@@ -62,7 +62,7 @@
 					<p class="text-center text-white">Daftar Online Pelatihan Penyuluhan Keamanan Pangan</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://dilaneirtp.jogjakota.go.id/sistem/apijss.php" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 					<p class="text-center text-white">Daftar Nomor Induk Berusaha (NIB) di OSS (Online Single Submission)</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://www.oss.go.id/oss/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 					<p class="text-center text-white">Daftar Sertifikasi Produk Pangan Industri Rumah Tangga</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://www.oss.go.id/oss/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://dilaneirtp.jogjakota.go.id/sistem/apijss.php" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -232,7 +232,7 @@
 			</div>
 			<div class="row pb-4">
 				<div class="col-lg-12 text-center">
-					<a class="btn-default btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold w-20">view more</a>
+					<a class="btn-default btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold w-20" href="<?php echo base_url('pojok-dilan/') ?>">view more</a>
 				</div>
 			</div>
 		</div>
