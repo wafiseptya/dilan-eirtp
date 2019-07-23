@@ -100,12 +100,12 @@
 	<section id="petunjuk" class="bg-petunjuk p-5">
 		<div class="container">
 			<div class="row">
-			<div class="col col-8 mt-5" >
+			<div class="col col-md-8 col-12 mt-5" >
 				<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
 					<h2 class="another_h2 text-white text-uppercase font-weight-bold">Petunjuk Pendaftaran E-IRTP</h2>
 				</div>
 				<div class="mt-4 row">
-					<ul class="nav nav-tabs padding w-100 nav-pills sort-source mb-4 pb-1" id="myTab" role="tablist">
+					<ul class="nav nav-tabs padding w-100 nav-pills sort-source mb-4 pb-1" id="myTab" role="tablist" style="border-bottom:  none;">
 					  <li class="nav-item col-4 p-0">
 						<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active"  data-toggle="pill" href="#home_test" role="tab" aria-controls="home" aria-selected="true"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
 					  </li>
@@ -218,7 +218,7 @@
 		<div class="container">
 			<div class="row pt-3">
 				<div class="col">
-					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-comment-dots far circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a;"></i>&nbsp;Berita dan Artikel<p></p></h2>				
+					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-comment-dots far circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a; margin-top:100px;"></i>&nbsp;Berita dan Artikel<p></p></h2>				
 				</div>
 				<div>
 					<hr/>
@@ -244,7 +244,7 @@
 			</div>
 			<div class="row pb-4">
 				<div class="col-lg-12 text-center">
-					<a class="btn-default btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold w-100">view more</a>
+					<a class="btn-default btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold w-20">view more</a>
 				</div>
 			</div>
 		</div>
@@ -387,14 +387,19 @@
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">PETA LOKASI</h4>
 					<div>
-            <?php echo $footer->location ?>
+            			<?php echo $footer->location ?>
 					</div>
 				</div>
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">DOWNLOAD APLKASI JSS</h4>
 					<div>
 						<a href="<?php echo $footer->apps ?>" target="_blank" >
-							<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/en_badge_web_generic-e1558684699870.png" width="350" height="110" alt="Play Store">
+							<img src="<?php echo base_url('assets');?>/img/image/play_store.png"
+											alt=""
+											style="width:100%"
+											data-bgposition="center center" 
+											data-bgfit="contain"
+											data-bgrepeat="no-repeat">
 						</a>
 					</div>
 				</div>

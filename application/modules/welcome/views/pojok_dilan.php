@@ -25,97 +25,48 @@
 
 				<h2 class="font-weight-bold">Berita</h2>
 				<div class="row">
+					<?php setlocale(LC_ALL, 'id_ID') ?>
+					<?php foreach ($posts as $news): ?>
 					<div class="col col-md-4 col-12">
 						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 								<span class="thumb-info-side-image-wrapper w-100">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
+									<span class="thumb-info-side-image-wrapper image-post w-100" style="background-image:url('<?php echo base_url('upload/news/'.$news->banner) ?>');overflow: hidden">
 								</span>
 								<span class="thumb-info-caption">
 									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
+										<h4 class="font-weight-semibold mb-1 text-center"><?php echo $news->title ?></h4>
+										<p class="text-2 text-center"><?php echo strftime("%d %B %Y", strtotime($news->created_at)); ?></p>
 									</span>
 								</span>
 							</span>
 						</a>
 					</div>
-					<div class="col col-md-4 col-12">
-						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
-							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper w-100">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col col-md-4 col-12">
-						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
-							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper w-100">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
+					<?php endforeach ?>
 				</div>
 
-				<h2 class="font-weight-bold">Artikel</h2>
+				<h2 class="font-weight-bold">Tips dan Artikel</h2>
 				<div class="row">
+					<?php setlocale(LC_ALL, 'id_ID') ?>
+					<?php foreach ($posts as $news): ?>
 					<div class="col col-md-4 col-12">
 						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 								<span class="thumb-info-side-image-wrapper w-100">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
+									<span class="thumb-info-side-image-wrapper image-post w-100" style="background-image:url('<?php echo base_url('upload/news/'.$news->banner) ?>');overflow: hidden">
 								</span>
 								<span class="thumb-info-caption">
 									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
+										<h4 class="font-weight-semibold mb-1 text-center"><?php echo $news->title ?></h4>
+										<p class="text-2 text-center"><?php echo strftime("%d %B %Y", strtotime($news->created_at)); ?></p>
 									</span>
 								</span>
 							</span>
 						</a>
 					</div>
-					<div class="col col-md-4 col-12">
-						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
-							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper w-100">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col col-md-4 col-12">
-						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
-							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper w-100">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
+					<?php endforeach ?>
 				</div>
-
-				<!-- <div class="row">
+				<!--<div class="row">
 					<div class="col col-md-6 col-12 pr-4">
 						<h3 class="font-weight-bold">Berita</h3>
 						<div class="container">
@@ -240,7 +191,7 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>-->
 			</div>
 	</div>
 	</div>
@@ -269,14 +220,19 @@
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">PETA LOKASI</h4>
 					<div>
-            <?php echo $footer->location ?>
+            			<?php echo $footer->location ?>
 					</div>
 				</div>
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">DOWNLOAD APLKASI JSS</h4>
 					<div>
 						<a href="<?php echo $footer->apps ?>" target="_blank" >
-							<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/en_badge_web_generic-e1558684699870.png" width="350" height="110" alt="Play Store">
+							<img src="<?php echo base_url('assets');?>/img/image/play_store.png"
+											alt=""
+											style="width:100%"
+											data-bgposition="center center" 
+											data-bgfit="contain"
+											data-bgrepeat="no-repeat">
 						</a>
 					</div>
 				</div>
@@ -291,5 +247,5 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>	
 </div>

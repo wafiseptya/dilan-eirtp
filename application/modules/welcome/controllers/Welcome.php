@@ -83,7 +83,8 @@ class Welcome extends MY_frontend {
         
 
         $data["news"] = $news->getById($id);
-        if (!$data["news"]) show_404();
+		if (!$data["news"]) show_404();
+		$data["footer"] = $this->footer_model->getById();
         
         $data["content"] = 'news';
         $this->view($data, true);
