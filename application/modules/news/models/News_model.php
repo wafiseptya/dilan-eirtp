@@ -5,6 +5,7 @@ class News_model extends CI_Model
     private $_table = "news";
 
     public $id;
+    public $cat_id;
     public $author;
     public $title;
     public $content;
@@ -28,6 +29,7 @@ class News_model extends CI_Model
 
     public function getAll()
     {
+        $this->db->join('news_category', 'news_category.id = news.cat_id');
         return $this->db->get($this->_table)->result();
     }
 
@@ -50,6 +52,7 @@ class News_model extends CI_Model
         $news = $this->input->post();
         $this->author = $user_name;
         $this->title = $news["title"];
+        $this->cat_id = $news["cat_id"];
         $this->content = $news["content"];
         $this->banner = $this->_uploadImage();
         date_default_timezone_set('Asia/Jakarta');
@@ -65,6 +68,7 @@ class News_model extends CI_Model
         $this->id = $id;
         $this->author = $user_name;
         $this->title = $news["title"];
+        $this->cat_id = $news["cat_id"];
         $this->content = $news["content"];
         // banner
         if (!empty($_FILES["banner"]["name"])) {

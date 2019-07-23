@@ -25,16 +25,16 @@
       </div>
 
       <div class="form-group">
-        <label for="">Kategori Artikel*</label>
-        <select required id="category" name="category" class="form-control" onchange="hideShow()">
+        <label for="cat_id">Kategori Artikel*</label>
+        <select required id="cat_id" name="cat_id" class="form-control" onchange="hideShow()">
           <option disabled selected value>-- PILIH KATEGORI ARTIKEL --</option>
           <?php foreach ($category as $row): ?>
-          <option value="<?php echo $row->id ?>"><?php echo $row->title ?></option>
+          <option value="<?php echo $row->id ?>"><?php echo $row->cat_title ?></option>
           <?php endforeach; ?>
           
         </select>
         <div class="invalid-feedback">
-          <?php echo form_error('category') ?>
+          <?php echo form_error('cat_id') ?>
         </div>
       </div>
 

@@ -14,6 +14,7 @@
           <thead>
             <tr>
               <th>Judul</th>
+              <th>Kategori</th>
               <th>Banner</th>
               <th>Konten</th>
               <th>Action</th>
@@ -22,15 +23,18 @@
           <tbody>
             <?php foreach ($news as $p): ?>
             <tr>
-              <td width="150">
+              <td>
                 <?php echo $p->title ?>
+              </td>
+              <td>
+                <?php echo $p->cat_title ?>
               </td>
               <td>
                 <img src="<?php echo base_url('upload/news/'.$p->banner) ?>" width="64" />
               </td>
               <td class="small">
                 <?php echo substr($p->content, 0, 120) ?></td>
-              <td width="250">
+              <td>
                 <a href="<?php echo base_url('news/edit/'.$p->id) ?>"
                 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
                 <a onclick="deleteConfirm('<?php echo base_url('news/delete/'.$p->id) ?>')"
