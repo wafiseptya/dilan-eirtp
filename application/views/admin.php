@@ -18,6 +18,11 @@
 
     <!-- Custom styles for this template-->
     <link href="<?php echo base_url('assets/admin/')?>css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+      .ck-editor__editable {
+        min-height: 200px;
+      }
+    </style>
 </head>
 
 <body id="page-top">
@@ -29,10 +34,11 @@
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-            <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <!-- <div class="sidebar-brand-icon rotate-n-15">
+            <img src="<?php echo base_url('assets/img/image/logo-dilan-1x.png')?>">
+
+            </div> -->
+            <div class="sidebar-brand-text mx-3">DILAN E-IRTP</div>
         </a>
 
         <!-- Divider -->
@@ -72,6 +78,7 @@
                   <h6 class="collapse-header">Artikel Tables</h6>
                   <a class="dropdown-item" href="<?php echo base_url('news/add') ?>">New Artikel</a>
                   <a class="dropdown-item" href="<?php echo base_url('news') ?>">List Artikel</a>
+                  <a class="dropdown-item" href="<?php echo base_url('news/kategori') ?>">List Kategori</a>
               </div>
             </div>
         </li>
@@ -221,10 +228,14 @@
                 <li class="nav-item dropdown no-arrow">
                   <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrator</span>
-                    <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                    <img class="img-profile rounded-circle" src="<?php echo base_url('assets/admin/')?>img/photo-people.png">
                   </a>
                 <!-- Dropdown - User Information -->
                   <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                      <a class="dropdown-item" href="<?php echo base_url('auth') ?>">
+                        <i class="fas fa-cog fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Setting
+                      </a>
                       <a class="dropdown-item" href="<?php echo base_url('auth/logout') ?>" data-toggle="modal" data-target="#logoutModal">
                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                         Logout
@@ -252,7 +263,7 @@
       <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2019</span>
+                    <span>Copyright &copy; 2019 IRTP Online - Dinas Kesehatan Kota Yogyakarta | All Rights Reserved</span>
                 </div>
             </div>
       </footer>

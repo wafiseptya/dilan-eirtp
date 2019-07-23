@@ -5,7 +5,7 @@ class News_model extends CI_Model
     private $_table = "news";
 
     public $id;
-    public $user_id;
+    public $author;
     public $title;
     public $content;
     public $banner;
@@ -45,9 +45,10 @@ class News_model extends CI_Model
         return $this->db->get_where($this->_table, ["id" => $id])->row();
     }
 
-    public function save()
+    public function save($user_name)
     {
         $news = $this->input->post();
+        $this->author = $user_name;
         $this->title = $news["title"];
         $this->content = $news["content"];
         $this->banner = $this->_uploadImage();
@@ -56,10 +57,13 @@ class News_model extends CI_Model
         $this->db->insert($this->_table, $this);
     }
 
-    public function update()
+    public function update($user_name)
     {
         $news = $this->input->post();
-        $this->id = $news["id"];
+        $id = $news["id"];
+        $old = $this->db->get_where($this->_table, ["id" => $id])->row();
+        $this->id = $id;
+        $this->author = $user_name;
         $this->title = $news["title"];
         $this->content = $news["content"];
         // banner
@@ -70,6 +74,7 @@ class News_model extends CI_Model
         }
 
         date_default_timezone_set('Asia/Jakarta');
+        $this->created_at = $old->created_at;
         $this->updated_at = date('Y-m-d H:i:s');
         $this->db->update($this->_table, $this, array('id' => $news['id']));
     }
@@ -84,7 +89,7 @@ class News_model extends CI_Model
     {
         $uniqid = uniqid();
         $config['upload_path']          = './upload/news/';
-        $config['allowed_types']        = 'jpg|png';
+        $config['allowed_types']        = 'jpg|png|jpeg';
         $config['file_name']            = 'news-'.$uniqid;
         $config['overwrite']			      = true;
         $config['max_size']             = 5048; // 1MB

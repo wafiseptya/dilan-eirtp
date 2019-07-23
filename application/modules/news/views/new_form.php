@@ -25,6 +25,20 @@
       </div>
 
       <div class="form-group">
+        <label for="">Kategori Artikel*</label>
+        <select required id="category" name="category" class="form-control" onchange="hideShow()">
+          <option disabled selected value>-- PILIH KATEGORI ARTIKEL --</option>
+          <?php foreach ($category as $row): ?>
+          <option value="<?php echo $row->id ?>"><?php echo $row->title ?></option>
+          <?php endforeach; ?>
+          
+        </select>
+        <div class="invalid-feedback">
+          <?php echo form_error('category') ?>
+        </div>
+      </div>
+
+      <div class="form-group">
         <label for="banner">Banner Image*</label>
         <input class="form-control-file <?php echo form_error('banner') ? 'is-invalid':'' ?>"
         type="file" name="banner" />
