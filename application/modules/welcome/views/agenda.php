@@ -7,15 +7,11 @@
 							<div class="text_color font-weight-bold">
 								<h2 class="mb-0 text_color font-weight-bold mb-0"><?php echo $agenda->title ?> </h2>
 								<?php setlocale(LC_ALL, 'id_ID') ?>
-								<span><?php echo strftime("%d %B", strtotime($agenda->date)) . " jam " . date("H:i", strtotime($agenda->start_time)) . " - " . date("H:i", strtotime($agenda->end_time)); ?></span>
+								<span><?php echo strftime("%d %B %G", strtotime($agenda->date)) . " jam " . date("H:i", strtotime($agenda->start_time)) . " - " . date("H:i", strtotime($agenda->end_time)); ?></span>
 							</div>
 						</div>
 						<div class="mt-5">
 							<p><?php echo $agenda->title ?> </p>
-							<div class="mt-5">
-								<a href="#"><span class="bg-kalender text-uppercase mt-">+ kalender google</span></a>
-								<a href="#"><span class="bg-kalender text-uppercase">+ ekspor ical</span></a>
-							</div>
 						</div>
 					</div>
 					<div class="col-4">
@@ -23,7 +19,7 @@
 							<h4 class="mb-0 text-white font-weight-bold">Detail</h4>
 						</div>
 						<div>
-							<span class="font-weight-bold">Tanggal :</span> <p><?php echo strftime("%d %B", strtotime($agenda->date)) ?></p>
+							<span class="font-weight-bold">Tanggal :</span> <p><?php echo strftime("%d %B %G", strtotime($agenda->date)) ?></p>
 							<hr class="border_bottom"/>
 						</div>
 						<div>
@@ -31,12 +27,12 @@
 							<hr class="border_bottom"/>
 						</div>
 						<div>
-							<span class="font-weight-bold">Event Category :</span>
+							<span class="font-weight-bold">Kategori :</span>
 							<p><?php echo $agenda->category ?> </p>
 							<hr class="border_bottom"/>
 						</div>
 						<div class="sub_bg mb-3">
-							<h4 class="mb-0 text-white font-weight-bold">Venue</h4>
+							<h4 class="mb-0 text-white font-weight-bold">Lokasi</h4>
 						</div> 
 						<div>
 							<?php echo $agenda->venue ?>

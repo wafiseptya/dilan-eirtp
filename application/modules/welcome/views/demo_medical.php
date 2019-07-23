@@ -62,7 +62,7 @@
 					<p class="text-center text-white">Daftar Online Pelatihan Penyuluhan Keamanan Pangan</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button onclick="window.location.href='https://integra.web.id/eirtp-diy/'" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
+							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 					<p class="text-center text-white">Daftar Nomor Induk Berusaha (NIB) di OSS (Online Single Submission)</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button onclick="window.location.href='https://integra.web.id/eirtp-diy/'" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</button>
+							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 					<p class="text-center text-white">Daftar Sertifikasi Produk Pangan Industri Rumah Tangga</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<button onclick="window.location.href='https://www.oss.go.id/oss/'" class="text-uppercase p-2 border-dark w-100 btn btn-default ">Register</button>
+							<a target="_blank" href="https://www.oss.go.id/oss/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -97,38 +97,95 @@
 			<div class="d-flex justify-content-center mt-5 android-bg w-100 rev-slidebag" style="background-image: url('<?php echo base_url('upload/header/'.$header_main->image) ?>');"></div>
 		</a>
 	</section>
-	<section id="petunjuk" class="bg-petunjuk">
+	<section id="petunjuk" class="bg-petunjuk p-5">
 		<div class="container">
 			<div class="row">
-				<div class="col col-md-8 col-12 mt-5" >
+			<div class="col col-8 mt-5" >
+				<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
+					<h2 class="another_h2 text-white text-uppercase font-weight-bold">Petunjuk Pendaftaran E-IRTP</h2>
+				</div>
+				<div class="mt-4 row">
+					<ul class="nav nav-tabs padding w-100 nav-pills sort-source mb-4 pb-1" id="myTab" role="tablist">
+					  <li class="nav-item col-4 p-0">
+						<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active"  data-toggle="pill" href="#home_test" role="tab" aria-controls="home" aria-selected="true"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
+					  </li>
+					  <li class="nav-item col-4 p-0">
+						<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-alt fas mr-3" style="font-size:17px;"></i>DAFTAR NIB</h4></a></li>
+					  </li>
+					  <li class="nav-item col-4 p-0">
+						<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" data-toggle="pill" href="#messages" role="tab" aria-controls="messages" aria-selected="false"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-check fas mr-3" style="font-size:17px;"></i>DAFTAR IRTP</h4></a></li>
+					  </li>
+					</ul>
+				</div>
+				
+				<div class="tab-content p-0">
+					<div class="tab-pane active" id="home_test" role="tabpanel" aria-labelledby="home-tab">
+						<div class="portfolio-item">
+							<div class="portfolio-item">
+									<img src="assets/img/image/Pendaftaran-PKP.png"  
+										alt=""
+										style="width:100%"
+										data-bgposition="center center" 
+										data-bgfit="contain"
+										data-bgrepeat="no-repeat">
+								</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="portfolio-item">
+							<div class="portfolio-item">
+									<img src="assets/img/image/nib.png"  
+										alt=""
+										style="width:100%"
+										data-bgposition="center center" 
+										data-bgfit="contain"
+										data-bgrepeat="no-repeat">
+								</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+						<div class="portfolio-item">
+							<div class="portfolio-item">
+								<img src="assets/img/image/IRTP.png"  
+									alt=""
+									style="width:100%"
+									data-bgposition="center center" 
+									data-bgfit="contain"
+									data-bgrepeat="no-repeat">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--<div class="col col-md-8 col-12 mt-5" >
 					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
 						<h2 class="another_h2 text-white text-uppercase font-weight-bold text-center">Petunjuk Pendaftaran E-IRTP</h2>
 					</div>
 					<div class="mt-4 row">
 						<ul class="nav padding w-100 nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-              <?php foreach ($header_petunjuk as $judul): ?>
-                <li class="nav-item col-4 p-0" data-option-value=".<?php echo str_replace(' ', '', $judul->description) ?>" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i><?php echo $judul->description ?></h4></a></li>
-              <?php endforeach; ?>
+						  <?php foreach ($header_petunjuk as $judul): ?>
+							<li class="nav-item col-4 p-0" data-option-value=".<?php echo str_replace(' ', '', $judul->description) ?>" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i><?php echo $judul->description ?></h4></a></li>
+						  <?php endforeach; ?>
 						</ul>
-					</div>
+						</div>
 					<div>
-
-							<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-                <?php foreach ($header_petunjuk as $img_petunjuk): ?>
-                <div class="col-md-4 isotope-item <?php echo str_replace(' ', '', $img_petunjuk->description) ?>">
-									<div class="portfolio-item">
-										<img src="<?php echo base_url('upload/header/'.$img_petunjuk->image) ?>"  
-											alt=""
-											data-bgposition="center center" 
-											data-bgfit="contain"
-											data-bgrepeat="no-repeat">
-									</div>
+						<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
+							<?php foreach ($header_petunjuk as $img_petunjuk): ?>
+							<div class="col-md-4 isotope-item <?php echo str_replace(' ', '', $img_petunjuk->description) ?>">
+								<div class="portfolio-item">
+									<img src="<?php echo base_url('upload/header/'.$img_petunjuk->image) ?>"  
+										alt=""
+										data-bgposition="center center" 
+										data-bgfit="contain"
+										data-bgrepeat="no-repeat">
 								</div>
-                <?php endforeach; ?>
 							</div>
-						
+							<?php endforeach; ?>
+						</div>
 					</div>
-				</div>
+			</div> 
+			-->
 				<div class="col col-md-4 col-12 mt-5">
 					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
 						<h2 class="another_h2 text-white text-uppercase font-weight-bold">Agenda</h2>
@@ -140,10 +197,10 @@
 								<li>
 									<div>
 										<h4>
-											<a class ="news" href="<?php echo base_url('welcome/agenda/'.$a->id) ?>"><?php echo $a->title ?> </a>
+											<a class ="news" href="<?php echo base_url('kegiatan/'.$a->id) ?>"><?php echo $a->title ?> </a>
 										</h4>
 										<div class="duration">
-											<span class="tribe-event-date-start"><?php echo strftime("%d %B", strtotime($a->date)) . " jam " . date("H:i", strtotime($a->start_time)) . " - " . date("H:i", strtotime($a->end_time)); ?></span>
+											<span class="tribe-event-date-start"><?php echo strftime("%d %B %G", strtotime($a->date)) . " jam " . date("H:i", strtotime($a->start_time)) . " - " . date("H:i", strtotime($a->end_time)); ?></span>
 										</div>
 										<div>
 											<hr/>
@@ -170,7 +227,7 @@
 			<div class="row">
 				<?php foreach ($posts as $news): ?>
 				<div class="col-md-3">
-					<a href="<?php echo base_url('welcome/news/'.$news->id) ?>" class="text-decoration-none">
+					<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 						<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 							<span class="thumb-info-side-image-wrapper image-post" style="background-image:url('<?php echo base_url('upload/news/'.$news->banner) ?>');overflow: hidden">
 							</span>
@@ -352,5 +409,5 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>	
 </div>

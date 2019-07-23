@@ -6,7 +6,7 @@
 					<?php setlocale(LC_ALL, 'id_ID') ?>
 					<?php foreach ($posts as $news): ?>
 					<div class="col col-md-4 col-12">
-						<a href="#" class="text-decoration-none">
+						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
 								<span class="thumb-info-side-image-wrapper w-100">
 									<span class="thumb-info-side-image-wrapper image-post w-100" style="background-image:url('<?php echo base_url('upload/news/'.$news->banner) ?>');overflow: hidden">
@@ -22,56 +22,102 @@
 					</div>
 					<?php endforeach; ?>	
 				</div>
+
+				<h2 class="font-weight-bold">Berita</h2>
 				<div class="row">
 					<div class="col col-md-4 col-12">
-						<a href="#" class="text-decoration-none">
+						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg">
+								<span class="thumb-info-side-image-wrapper w-100">
+									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
 								</span>
 								<span class="thumb-info-caption">
 									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">Judul Lorem ipsum</h4>
-										<p class="text-2 text-center">Tanggal</p>
+										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
 									</span>
 								</span>
 							</span>
 						</a>
 					</div>
 					<div class="col col-md-4 col-12">
-						<a href="#" class="text-decoration-none">
+						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper ">
-									<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg">
+								<span class="thumb-info-side-image-wrapper w-100">
+									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
 								</span>
 								<span class="thumb-info-caption">
 									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">Judul Lorem ipsum Judul Lorem ipsum Judul Lorem ipsum Judul Lorem ipsum </h4>
-										<p class="text-2 text-center">Tanggal</p>
+										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
 									</span>
 								</span>
 							</span>
 						</a>
 					</div>
 					<div class="col col-md-4 col-12">
-						<a href="#" class="text-decoration-none">
+						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
-								<span class="thumb-info-side-image-wrapper">
-									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg">
+								<span class="thumb-info-side-image-wrapper w-100">
+									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
 								</span>
 								<span class="thumb-info-caption">
 									<span class="thumb-info-caption-text p-xl">
-										<h4 class="font-weight-semibold mb-1 text-center">Judul Lorem ipsum</h4>
-										<p class="text-2 text-center">Tanggal</p>
+										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
 									</span>
 								</span>
 							</span>
 						</a>
 					</div>
 				</div>
+
+				<h2 class="font-weight-bold">Artikel</h2>
 				<div class="row">
+					<div class="col col-md-4 col-12">
+						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
+							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
+								<span class="thumb-info-side-image-wrapper w-100">
+									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
+								</span>
+								<span class="thumb-info-caption">
+									<span class="thumb-info-caption-text p-xl">
+										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col col-md-4 col-12">
+						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
+							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
+								<span class="thumb-info-side-image-wrapper w-100">
+									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
+								</span>
+								<span class="thumb-info-caption">
+									<span class="thumb-info-caption-text p-xl">
+										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col col-md-4 col-12">
+						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
+							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
+								<span class="thumb-info-side-image-wrapper w-100">
+									<img class="w-100" src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/WhatsApp_Image_2019-04-24_at_13.16_.11_.jpeg" height="250px">
+								</span>
+								<span class="thumb-info-caption">
+									<span class="thumb-info-caption-text p-xl">
+										<h4 class="font-weight-semibold mb-1 text-center">UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- <div class="row">
 					<div class="col col-md-6 col-12 pr-4">
-						<h2>Berita</h2>
+						<h3 class="font-weight-bold">Berita</h3>
 						<div class="container">
 							<div class="row mb-5">
 								<div class="col-7 pl-0 pr-0">
@@ -79,7 +125,7 @@
 								</div>
 								<div class="col-5">
 									<a href="#"><h4>UMKM di Kota Yogyakarta didorong Miliki Izin P-IRT</h4></a>
-									<p>Dinas Kesehatan melalui Pemerintah Kota Yogyakarta menyelenggarakan penyuluhan peningkatan mutu</p>
+									<p class="text-justify">Dinas Kesehatan melalui Pemerintah Kota Yogyakarta menyelenggarakan penyuluhan peningkatan mutu</p>
 								</div>
 								<div class="col-12 border-top border-bottom mb-3 mt-3">
 									<div class="row">
@@ -133,7 +179,7 @@
 						</div>
 					</div>
 					<div class="col col-md-6 col-12">
-						<h2>Tips dan Artikel</h2>
+						<h3 class="font-weight-bold">Tips dan Artikel</h3>
 						<div class="container">
 							<div class="row mb-5">
 								<div class="col-7 pl-0 pr-0">
@@ -194,7 +240,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 	</div>
 	</div>
@@ -205,31 +251,31 @@
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">DINAS KESEHATAN KOTA YOGYAKARTA</h4>
 					<div class="mt-3">
-						<p class="text-white">Jalan Kenari No.56 Kota Yogyakarta (Komplek Balaikota Yogyakarta) Kodepos 55165</p>
+						<p class="text-white"><?php echo $footer->address ?></p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">Telp. (0274) 515869</p>
+						<p class="mb-0 text-white">Telp. <?php echo $footer->telp ?></p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">Fax. (0274) 515868 </p>
+						<p class="mb-0 text-white">Fax. <?php echo $footer->fax ?> </p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">WhatsApp. 0-823-1404-0407</p>
+						<p class="mb-0 text-white">WhatsApp. <?php echo $footer->whatsapp ?></p>
 					</div>
 					<div>
-						<p class="mb-0 text-white">Email: regulasi.dinkesyk@gmail.com</p>
+						<p class="mb-0 text-white">Email: <?php echo $footer->email ?></p>
 					</div>
 				</div>
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">PETA LOKASI</h4>
 					<div>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9042544645213!2d110.38823011415445!3d-7.799960879585036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577caaa817ed%3A0x1e4bc5c6b6a26619!2sDinas+Kesehatan+Kota+Yogyakarta!5e0!3m2!1sid!2sid!4v1561953491673!5m2!1sid!2sid" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <?php echo $footer->location ?>
 					</div>
 				</div>
 				<div class="col col-md-4 col-12 mt-3">
 					<h4 class="font-weight-bold">DOWNLOAD APLKASI JSS</h4>
 					<div>
-						<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" >
+						<a href="<?php echo $footer->apps ?>" target="_blank" >
 							<img src="https://integra.web.id/eirtp-public/wp-content/uploads/2019/05/en_badge_web_generic-e1558684699870.png" width="350" height="110" alt="Play Store">
 						</a>
 					</div>
@@ -246,4 +292,4 @@
 			</div>
 		</div>
 	</footer>
-	</div>
+</div>
