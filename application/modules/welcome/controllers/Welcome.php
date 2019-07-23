@@ -16,6 +16,7 @@ class Welcome extends MY_frontend {
       $this->load->model("about/about_model");
       $this->load->model("statistik/statistik_model");
       $this->load->model("statistik/statistik_jumlah_model");
+      $this->load->model("news/kategori_model");
       // $this->load->model("statistik/statistik_model");
   }
 
@@ -56,7 +57,10 @@ class Welcome extends MY_frontend {
 	}
 	public function pojok()
 	{
-		$data["posts"] = $this->news_model->getTop();
+    $data["posts"] = $this->news_model->getSix();
+    // id berita = 1
+		$data["berita"] = $this->news_model->getSixBerita(1);
+		$data["other"] = $this->news_model->getSixOther(1);
 		$data["footer"] = $this->footer_model->getById();
     
 		$data["content"] = 'pojok_dilan';

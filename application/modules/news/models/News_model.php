@@ -41,6 +41,35 @@ class News_model extends CI_Model
 
         return $this->db->get($this->_table)->result();
     }
+
+    public function getSix()
+    {
+        $this->db->select('*');
+        $this->db->order_by('created_at', 'DESC');
+        $this->db->limit('6');
+
+        return $this->db->get($this->_table)->result();
+    }
+
+    public function getSixBerita($id)
+    {
+        $this->db->select('*');
+        $this->db->where('cat_id', $id);
+        $this->db->order_by('created_at', 'DESC');
+        $this->db->limit('6');
+
+        return $this->db->get($this->_table)->result();
+    }
+
+    public function getSixOther($id)
+    {
+        $this->db->select('*');
+        $this->db->where('cat_id !=', $id);
+        $this->db->order_by('created_at', 'DESC');
+        $this->db->limit('6');
+
+        return $this->db->get($this->_table)->result();
+    }
     
     public function getById($id)
     {

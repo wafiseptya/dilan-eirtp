@@ -26,7 +26,7 @@
 				<h2 class="font-weight-bold">Berita</h2>
 				<div class="row">
 					<?php setlocale(LC_ALL, 'id_ID') ?>
-					<?php foreach ($posts as $news): ?>
+					<?php foreach ($berita as $news): ?>
 					<div class="col col-md-4 col-12">
 						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">
@@ -48,7 +48,7 @@
 				<h2 class="font-weight-bold">Tips dan Artikel</h2>
 				<div class="row">
 					<?php setlocale(LC_ALL, 'id_ID') ?>
-					<?php foreach ($posts as $news): ?>
+					<?php foreach ($other as $news): ?>
 					<div class="col col-md-4 col-12">
 						<a href="<?php echo base_url('berita/'.$news->id) ?>" class="text-decoration-none">
 							<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight">

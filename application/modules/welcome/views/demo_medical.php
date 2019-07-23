@@ -106,23 +106,31 @@
 				</div>
 				<div class="mt-4 row">
 					<ul class="nav nav-tabs padding w-100 nav-pills sort-source mb-4 pb-1" id="myTab" role="tablist" style="border-bottom:  none;">
-					  <li class="nav-item col-4 p-0">
-						<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active"  data-toggle="pill" href="#home_test" role="tab" aria-controls="home" aria-selected="true"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i>DAFTAR PELATIHAN</h4></a></li>
-					  </li>
-					  <li class="nav-item col-4 p-0">
-						<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-alt fas mr-3" style="font-size:17px;"></i>DAFTAR NIB</h4></a></li>
-					  </li>
-					  <li class="nav-item col-4 p-0">
-						<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk" data-toggle="pill" href="#messages" role="tab" aria-controls="messages" aria-selected="false"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-check fas mr-3" style="font-size:17px;"></i>DAFTAR IRTP</h4></a></li>
-					  </li>
+          <?php 
+          $count =1;
+          ?>
+          <?php foreach ($header_petunjuk as $judul): ?>
+
+            <li class="nav-item col-4 p-0">
+						  <a class="nav-link border border-white d-flex justify-content-center padding-petunjuk  <?php echo $count == 1 ? ' active': '' ?>"  data-toggle="pill" href="#<?php echo str_replace(' ', '', $judul->description) ?>" role="tab" aria-controls="home" aria-selected="true"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i><?php echo $judul->description ?></h4></a>
+            </li>
+          <?php
+          $count++;
+          ?>
+          <?php endforeach; ?>
+
 					</ul>
 				</div>
 				
 				<div class="tab-content p-0">
-					<div class="tab-pane active" id="home_test" role="tabpanel" aria-labelledby="home-tab">
+        <?php 
+        $count =1;
+        ?>
+        <?php foreach ($header_petunjuk as $img_petunjuk): ?>
+					<div class="tab-pane <?php echo $count == 1 ? ' active': '' ?>" id="<?php echo str_replace(' ', '', $img_petunjuk->description) ?>" role="tabpanel" aria-labelledby="home-tab">
 						<div class="portfolio-item">
 							<div class="portfolio-item">
-									<img src="assets/img/image/Pendaftaran-PKP.png"  
+									<img src="<?php echo base_url('upload/header/'.$img_petunjuk->image) ?>"  
 										alt=""
 										style="width:100%"
 										data-bgposition="center center" 
@@ -131,30 +139,10 @@
 								</div>
 						</div>
 					</div>
-					<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-						<div class="portfolio-item">
-							<div class="portfolio-item">
-									<img src="assets/img/image/nib.png"  
-										alt=""
-										style="width:100%"
-										data-bgposition="center center" 
-										data-bgfit="contain"
-										data-bgrepeat="no-repeat">
-								</div>
-						</div>
-					</div>
-					<div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-						<div class="portfolio-item">
-							<div class="portfolio-item">
-								<img src="assets/img/image/IRTP.png"  
-									alt=""
-									style="width:100%"
-									data-bgposition="center center" 
-									data-bgfit="contain"
-									data-bgrepeat="no-repeat">
-							</div>
-						</div>
-					</div>
+        <?php
+        $count++;
+        ?>
+        <?php endforeach; ?>
 				</div>
 			</div>
 			
