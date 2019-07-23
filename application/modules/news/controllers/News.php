@@ -64,7 +64,8 @@ class News extends MY_frontend
 
         $data["news"] = $news->getById($id);
         if (!$data["news"]) show_404();
-        
+        $data["category"] = $this->kategori_model->getAll();
+
         $data["content"] = 'edit_form';
         $this->admin($data, true);
     }

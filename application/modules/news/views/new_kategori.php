@@ -17,20 +17,20 @@
     <form action="<?php base_url('news/kategori/add') ?>" method="post" enctype="multipart/form-data" >
       
       <div class="form-group">
-        <label for="title">Judul Kategori*</label>
-        <input class="form-control <?php echo form_error('title') ? 'is-invalid':'' ?>"
-        type="text" name="title" placeholder="Title" />
+        <label for="cat_title">Judul Kategori*</label>
+        <input class="form-control <?php echo form_error('cat_title') ? 'is-invalid':'' ?>"
+        type="text" name="cat_title" placeholder="Title" />
         <div class="invalid-feedback">
-          <?php echo form_error('title') ?>
+          <?php echo form_error('cat_title') ?>
         </div>
       </div>
       
       <div class="form-group">
-        <label for="description">Deskripsi Kategori*</label>
-        <input class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
-        type="text" name="description" placeholder="Deskripsi kategori" />
+        <label for="cat_description">Deskripsi Kategori*</label>
+        <input class="form-control <?php echo form_error('cat_description') ? 'is-invalid':'' ?>"
+        type="text" name="cat_description" placeholder="Deskripsi kategori" />
         <div class="invalid-feedback">
-          <?php echo form_error('description') ?>
+          <?php echo form_error('cat_description') ?>
         </div>
       </div>
 
