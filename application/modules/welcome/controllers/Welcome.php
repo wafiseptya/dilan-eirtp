@@ -66,6 +66,13 @@ class Welcome extends MY_frontend {
 		$data["content"] = 'pojok_dilan';
 		$this->view($data, true);
 	}
+
+	public function faq()
+	{
+		$data["footer"] = $this->footer_model->getById();
+		$data["content"] = 'faq';
+		$this->view($data, true);
+	}
 	public function agenda($id = null)
 	{
 			if (!isset($id)) redirect('welcome');

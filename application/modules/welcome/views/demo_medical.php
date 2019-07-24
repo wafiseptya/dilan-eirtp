@@ -3,16 +3,16 @@
 		<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 450, 'disableProgressBar': 'on', 'navigation': {'bullets': {'enable': true, 'direction': 'vertical', 'h_align': 'right', 'v_align': 'center', 'space': 5}, 'arrows': {'enable': false}}}">
 			<ul>
 				<?php foreach ($header_top as $top): ?>
-					<li data-transition="fade">
-						<img src="<?php echo base_url('upload/header/'.$top->image) ?>"  
-							alt="<?php echo base_url('upload/header/'.$top->description) ?>"
-							data-bgposition="center center" 
-							data-bgfit="cover" 
-							data-bgrepeat="no-repeat"
-							class="rev-slidebg">
-					</li>
+				<li data-transition="fade">
+					<img src="<?php echo base_url('upload/header/'.$top->image) ?>"  
+						alt="<?php echo base_url('upload/header/'.$top->description) ?>"
+						data-bgposition="center center" 
+						data-bgfit="cover" 
+						data-bgrepeat="no-repeat"
+						class="rev-slidebg">
+				</li>
 				<?php endforeach; ?>
-				</ul>
+			</ul>
 		</div>
 	</div>
 	<section class="section-custom-medical" id="dilan_e_irtp">
@@ -23,8 +23,7 @@
 						<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
 							<img class="size-medium wp-image-869" src="<?php echo base_url('upload/about/'.$about->image) ?>" alt="" width="300" height="91">
 						</h1>
-						<p class="text-center text-white">
-              <?php echo $about->content ?>
+						<p class="text-center text-white"><?php echo $about->content ?>
 						</p>
 					</div>
 				</div>
@@ -62,7 +61,7 @@
 					<p class="text-center text-white">Daftar Online Pelatihan Penyuluhan Keamanan Pangan</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://dilaneirtp.jogjakota.go.id/sistem/apijss.php" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -74,7 +73,7 @@
 					<p class="text-center text-white">Daftar Nomor Induk Berusaha (NIB) di OSS (Online Single Submission)</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://www.oss.go.id/oss/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -86,18 +85,24 @@
 					<p class="text-center text-white">Daftar Sertifikasi Produk Pangan Industri Rumah Tangga</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://dilaneirtp.jogjakota.go.id/sistem/apijss.php" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://www.oss.go.id/oss/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" >			
-			<div class="d-flex justify-content-center mt-5 android-bg w-100 rev-slidebag" style="background-image: url('<?php echo base_url('upload/header/'.$header_main->image) ?>');"></div>
-		</a>
+		<div  class="d-flex justify-content-center mt-5 w-100 rev-slidebag">
+			<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" target="_blank" aria-label="Banner Android" >
+			<img src="<?php echo base_url('upload/header/'.$header_main->image) ?>"  
+				alt=""
+				style="width:100%"
+				data-bgposition="center center" 
+				data-bgfit="contain"
+				data-bgrepeat="no-repeat">
+			</a>
+		</div>
 	</section>
-	<section id="petunjuk" class="bg-petunjuk p-5">
+	<section id="petunjuk" class="bg-petunjuk p-md-5">
 		<div class="container">
 			<div class="row">
 			<div class="col col-md-8 col-12 mt-5" >
@@ -145,35 +150,6 @@
         <?php endforeach; ?>
 				</div>
 			</div>
-			
-			<!--<div class="col col-md-8 col-12 mt-5" >
-					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
-						<h2 class="another_h2 text-white text-uppercase font-weight-bold text-center">Petunjuk Pendaftaran E-IRTP</h2>
-					</div>
-					<div class="mt-4 row">
-						<ul class="nav padding w-100 nav-pills sort-source mb-4 pb-1" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-						  <?php foreach ($header_petunjuk as $judul): ?>
-							<li class="nav-item col-4 p-0" data-option-value=".<?php echo str_replace(' ', '', $judul->description) ?>" class="active"><a class="nav-link border border-white d-flex justify-content-center padding-petunjuk active" href="#" ><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i><?php echo $judul->description ?></h4></a></li>
-						  <?php endforeach; ?>
-						</ul>
-						</div>
-					<div>
-						<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-							<?php foreach ($header_petunjuk as $img_petunjuk): ?>
-							<div class="col-md-4 isotope-item <?php echo str_replace(' ', '', $img_petunjuk->description) ?>">
-								<div class="portfolio-item">
-									<img src="<?php echo base_url('upload/header/'.$img_petunjuk->image) ?>"  
-										alt=""
-										data-bgposition="center center" 
-										data-bgfit="contain"
-										data-bgrepeat="no-repeat">
-								</div>
-							</div>
-							<?php endforeach; ?>
-						</div>
-					</div>
-			</div> 
-			-->
 				<div class="col col-md-4 col-12 mt-5">
 					<div style="background-color:#fa6900" class="d-flex justify-content-center pt-3 pb-3">
 						<h2 class="another_h2 text-white text-uppercase font-weight-bold">Agenda</h2>
@@ -206,7 +182,7 @@
 		<div class="container">
 			<div class="row pt-3">
 				<div class="col">
-					<h2 class="title-heading-left another_h2 font-weight-bold" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-comment-dots far circle-no" style="font-size:18px;margin-right:9px;color:#0a0a0a; margin-top:100px;"></i>&nbsp;Berita dan Artikel<p></p></h2>				
+					<h2 class="title-heading-left another_h2 font-weight-bold news_style" data-fontsize="21" data-lineheight="22"><i class="fontawesome-icon fa-comment-dots far circle-no" style="margin-top:100px;"></i>&nbsp;Berita dan Artikel<p></p></h2>				
 				</div>
 				<div>
 					<hr/>
@@ -232,7 +208,7 @@
 			</div>
 			<div class="row pb-4">
 				<div class="col-lg-12 text-center">
-					<a class="btn-default btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold w-20" href="<?php echo base_url('pojok-dilan/') ?>">view more</a>
+					<a class="btn-default btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold w-20" href="<?php echo base_url('pojok-dilan') ?>">view more</a>
 				</div>
 			</div>
 		</div>
@@ -351,56 +327,4 @@
 			</div>
 		</div>
 	</section>
-	<footer id="footer" class="m-0 bg-footer">
-		<div class="container">
-			<div class="row pt-5 pb-3">
-				<div class="col col-md-4 col-12 mt-3">
-					<h4 class="font-weight-bold">DINAS KESEHATAN KOTA YOGYAKARTA</h4>
-					<div class="mt-3">
-						<p class="text-white"><?php echo $footer->address ?></p>
-					</div>
-					<div>
-						<p class="mb-0 text-white">Telp. <?php echo $footer->telp ?></p>
-					</div>
-					<div>
-						<p class="mb-0 text-white">Fax. <?php echo $footer->fax ?> </p>
-					</div>
-					<div>
-						<p class="mb-0 text-white">WhatsApp. <?php echo $footer->whatsapp ?></p>
-					</div>
-					<div>
-						<p class="mb-0 text-white">Email: <?php echo $footer->email ?></p>
-					</div>
-				</div>
-				<div class="col col-md-4 col-12 mt-3">
-					<h4 class="font-weight-bold">PETA LOKASI</h4>
-					<div>
-            			<?php echo $footer->location ?>
-					</div>
-				</div>
-				<div class="col col-md-4 col-12 mt-3">
-					<h4 class="font-weight-bold">DOWNLOAD APLKASI JSS</h4>
-					<div>
-						<a href="<?php echo $footer->apps ?>" target="_blank" >
-							<img src="<?php echo base_url('assets');?>/img/image/play_store.png"
-											alt=""
-											style="width:100%"
-											data-bgposition="center center" 
-											data-bgfit="contain"
-											data-bgrepeat="no-repeat">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright pt-3 pb-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 m-0">
-						<p>Copyright 2019 IRTP Online - Dinas Kesehatan Kota Yogyakarta | All Rights Reserved</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>	
 </div>
