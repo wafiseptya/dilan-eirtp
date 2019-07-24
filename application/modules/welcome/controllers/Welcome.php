@@ -17,6 +17,7 @@ class Welcome extends MY_frontend {
       $this->load->model("statistik/statistik_model");
       $this->load->model("statistik/statistik_jumlah_model");
       $this->load->model("news/kategori_model");
+      $this->load->model("faq/faq_model");
       // $this->load->model("statistik/statistik_model");
   }
 
@@ -49,7 +50,7 @@ class Welcome extends MY_frontend {
 		$data["about"] = $this->about_model->getById();
 		$data["statistik"] = $this->statistik_model->getStat();
 		$data["irtp"] = $this->statistik_jumlah_model->getStatFrontIRTP();
-		$data["pirt"] = $this->statistik_jumlah_model->getStatFrontPIRT();
+		$data["pirt"] = $this->statistik_jumlah_model->getStatFrontPIRT();		
 		// $data["statistik"] = $this->statistik_model->getStat();
 		
 		$data["content"] = 'demo_medical';
@@ -70,6 +71,7 @@ class Welcome extends MY_frontend {
 	public function faq()
 	{
 		$data["footer"] = $this->footer_model->getById();
+		$data["faq"] = $this->faq_model->getAll();
 		$data["content"] = 'faq';
 		$this->view($data, true);
 	}
