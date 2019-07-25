@@ -164,7 +164,7 @@
             </div>
         </li>
 
-        <li class="nav-item <?php echo $this->uri->segment(1) == 'faq' ? 'active': '' ?>">
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'faqadmin' ? 'active': '' ?>">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#faq" aria-expanded="true" aria-controls="faq">
             <i class="fas fa-fw fa-cog"></i>
             <span>FAQ</span>
@@ -172,7 +172,7 @@
             <div id="faq" class="collapse" aria-labelledby="faqHeading" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">FAQ Tables</h6>
-                <a class="dropdown-item" href="<?php echo base_url('faq') ?>">List FAQ</a>
+                <a class="dropdown-item" href="<?php echo base_url('faqadmin') ?>">List FAQ</a>
             </div>
             </div>
         </li>
