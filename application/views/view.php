@@ -116,37 +116,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <nav class="collapse" id="nav-bar">
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link active" href="/">
+                                                    <a class="nav-link  <?php echo $this->uri->segment(1) != 'faq' && $this->uri->segment(1) != 'pojok-dilan' ? 'active': '' ?>" href="<?php echo $this->uri->segment(1) != 'faq' && $this->uri->segment(1) != 'pojok-dilan' ? '#home' : base_url() ?>">
                                                         BERANDA
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="#dilan_e_irtp">
+                                                    <a class="nav-link" href="<?php echo $this->uri->segment(1) != 'faq' && $this->uri->segment(1) != 'pojok-dilan' ? '#dilan_e_irtp' : base_url() ?>">
                                                         DILAN E-IRTP
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="#petunjuk">
+                                                    <a class="nav-link" href="<?php echo $this->uri->segment(1) != 'faq' && $this->uri->segment(1) != 'pojok-dilan' ? '#petunjuk' : base_url() ?>">
                                                         PETUNJUK
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="#berita">
+                                                    <a class="nav-link" href="<?php echo $this->uri->segment(1) != 'faq' && $this->uri->segment(1) != 'pojok-dilan' ? '#berita' : base_url() ?>">
                                                         BERITA
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="#marketplace">
+                                                    <a class="nav-link" href="<?php echo $this->uri->segment(1) != 'faq' && $this->uri->segment(1) != 'pojok-dilan' ? '#marketplace' : base_url() ?>">
                                                         MARKETPLACE
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="<?php echo base_url('faq') ?>">
+                                                    <a class="nav-link  <?php echo $this->uri->segment(1) == 'faq' ? 'active': '' ?>" href="<?php echo base_url('faq') ?>">
                                                         FAQ
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-full-color dropdown-secondary">
-                                                    <a class="nav-link" href="<?php echo base_url('pojok-dilan') ?>">
+                                                    <a class="nav-link  <?php echo $this->uri->segment(1) == 'pojok-dilan' ? 'active': '' ?>" href="<?php echo base_url('pojok-dilan') ?>">
                                                         POJOK DILAN
                                                     </a>
                                                 </li>
@@ -273,6 +273,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script type="text/javascript" src="<?php echo base_url('assets/chartjs/Chart.js')?>"></script>
 
 <!-- Theme Custom -->
+<script src="<?php echo base_url('assets/');?>js/scroll.js"></script>
 <script src="<?php echo base_url('assets/');?>js/custom.js"></script>
 
 </body>
