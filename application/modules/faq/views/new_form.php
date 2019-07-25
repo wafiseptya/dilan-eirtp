@@ -8,7 +8,7 @@
 
 <div class="card mb-3">
     <div class="card-header">
-        <a href="<?php echo base_url('faq') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+        <a href="<?php echo base_url('faqadmin') ?>"><i class="fas fa-arrow-left"></i> Back</a>
     </div>
     <div class="card-body">
 

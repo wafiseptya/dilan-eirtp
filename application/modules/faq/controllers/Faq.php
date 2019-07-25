@@ -34,7 +34,7 @@ class Faq extends MY_frontend {
     }
 
     public function edit($id = null){
-        if(!isset($id)) redirect('faq');
+        if(!isset($id)) redirect('faqadmin');
 
         $faq = $this->faq_model;
         $validation = $this->form_validation;
@@ -56,7 +56,7 @@ class Faq extends MY_frontend {
         if(!isset($id)) show_404();
 
         if($this->faq_model->delete($id)){
-            redirect(site_url('faq'));
+            redirect(site_url('faqadmin'));
         }
     }
 }

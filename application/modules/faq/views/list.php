@@ -10,11 +10,11 @@
     <div class="table-responsive">
         <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
             <thead>
-            <tr>
+              <tr>
                 <th>Judul</th>
                 <th>Isi</th>
                 <th>Aksi</th>
-            </tr>
+              </tr>
             </thead>
             <tbody>
             <?php foreach ($faq as $row): ?>
