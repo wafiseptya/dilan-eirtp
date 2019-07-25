@@ -117,7 +117,7 @@
           <?php foreach ($header_petunjuk as $judul): ?>
 
             <li class="nav-item col-4 p-0">
-						  <a class="nav-link border border-white d-flex justify-content-center padding-petunjuk  <?php echo $count == 1 ? ' active': '' ?>"  data-toggle="pill" href="#<?php echo str_replace(' ', '', $judul->description) ?>" role="tab" aria-controls="home" aria-selected="true"><h4 class="another_h4"><i class="fontawesome-icon fa-calendar-plus fas mr-3" style="font-size:17px;"></i><?php echo $judul->description ?></h4></a>
+				<a class="nav-link border border-white d-flex justify-content-center padding-petunjuk  <?php echo $count == 1 ? ' active': '' ?>"  data-toggle="pill" href="#<?php echo str_replace(' ', '', $judul->description) ?>" role="tab" aria-controls="home" aria-selected="true"><h4 class="another_h4"><?php echo $judul->description ?></h4></a>
             </li>
           <?php
           $count++;

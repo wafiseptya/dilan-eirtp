@@ -1,7 +1,7 @@
 <div role="main" class="main">
 	<section>
 		<div class="container mt-5">
-			<h2 class="font-weight-bold">Pojok Dilan</h2>
+			<h4 class="mb-4">Pojok Dilan</h4>
 			<div class="row">
 				<?php setlocale(LC_ALL, 'id_ID') ?>
 				<?php foreach ($posts as $news): ?>
@@ -23,7 +23,7 @@
 				<?php endforeach; ?>	
 			</div>
 
-			<h2 class="font-weight-bold">Berita</h2>
+			<h4 class="mb-4">Berita</h4>
 			<div class="row">
 				<?php setlocale(LC_ALL, 'id_ID') ?>
 				<?php foreach ($berita as $news): ?>
@@ -45,7 +45,7 @@
 				<?php endforeach ?>
 			</div>
 
-			<h2 class="font-weight-bold">Tips dan Artikel</h2>
+			<h4 class="mb-4">Tips & Artikel</h4>
 			<div class="row">
 				<?php setlocale(LC_ALL, 'id_ID') ?>
 				<?php foreach ($other as $news): ?>
