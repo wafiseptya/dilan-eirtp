@@ -232,7 +232,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </footer>	
 <div>
     <a href="https://web.whatsapp.com/send?phone=+6282314040407&text=Assalamualaikum..%20saya%20ingin%20mendapatkan%20informasi%20tentang%20pengurusan%20IRTP%20di%20Kota%20Yogyakarta" class="float" target="_blank">
-    <button class="button-wa p-2 pl-3 pr-3"><img src="<?php echo base_url('assets');?>/img/image/whatsapp(32x32).png" width="20"/><span class="pl-2 text-dark">Klik untuk bergabung dengan Whatsapp</span></button></a>
+    <button class="button-wa p-2 pl-3 pr-3"><img src="<?php echo base_url('assets');?>/img/image/whatsapp(32x32).png" width="20"/><span class="pl-2 text-dark">Hubungi kami dengan WhatsApp</span></button></a>
 </div>
 
 <!-- Vendor -->
