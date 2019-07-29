@@ -19,7 +19,7 @@
 		<div class="container">
 			<div class="row medical-schedules">
 				<div class="col-xl-12 bg-color-primary">
-					<div class="p-4" style="background-color:#5786bf;color:#ffffff;border-color:#ffffff;border-width:0px;">
+					<div class="p-md-4" style="background-color:#5786bf;color:#ffffff;border-color:#ffffff;border-width:0px;">
 						<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
 							<img class="size-medium wp-image-869" src="<?php echo base_url('upload/about/'.$about->image) ?>" alt="" width="300" height="91">
 						</h1>
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container mb-5">
 			<div class="pt-5 text-center pb-3">
 				<h3 class="font-weight-bold">6 Keuntungan Memiliki Sertifikasi IRTP</h3>
 			</div>
@@ -52,6 +52,27 @@
 			</div>
 		</div>
 		<div class="container">
+
+      <div class="row medical-schedules">
+        <div class="col-xl-12 bg-info">
+          <div class="px-md-4 my-4" >
+            <h4 class="text-center text-white">
+              SEBELUM MEMULAI PROSES PENDAFTARAN PKP, SILAHKAN TERLEBIH DAHULU MEMBUAT AKUN DI JOGJA SMART SERVICE (JSS) MELALUI HALAMAN WEB MAUPUN APLIKASI ANDROID.
+            </h4>
+            <div class="d-sm-none">
+              <div class="row d-flex justify-content-center">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice" class="text-uppercase text-dark py-2 px-4 border-dark btn btn-default">Buka JSS</a>
+              </div>
+            </div>
+            <div class="d-none d-sm-block ">
+              <div class="row d-flex justify-content-center">
+                <a target="_blank" href="https://jss.jogjakota.go.id/" class="text-uppercase text-dark py-2 px-4 border-dark btn btn-default">Buka JSS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 			<div class="row">
 				<div class="col bg-info p-4 m-3 padding">
 					<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
@@ -61,10 +82,11 @@
 					<p class="text-center text-white">Daftar Online Pelatihan Penyuluhan Keamanan Pangan</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://dilaneirtp.jogjakota.go.id/sistem/apijss.php" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
+
 				<div class="col bg-info p-4 m-3">
 					<h1 class="d-flex justify-content-center" data-fontsize="26" data-lineheight="36" style="">
 						<img src="assets/img/image/2-Daftar-OSS.png" width="250" height="250" alt="">
@@ -73,7 +95,7 @@
 					<p class="text-center text-white">Daftar Nomor Induk Berusaha (NIB) di OSS (Online Single Submission)</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://integra.web.id/eirtp-diy/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://www.oss.go.id/oss/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
@@ -85,7 +107,7 @@
 					<p class="text-center text-white">Daftar Sertifikasi Produk Pangan Industri Rumah Tangga</p>
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<a target="_blank" href="https://www.oss.go.id/oss/" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
+							<a target="_blank" href="https://dilaneirtp.jogjakota.go.id/sistem/apijss.php" class="text-uppercase p-2 border-dark w-100 btn btn-default">Register</a>
 						</div>
 					</div>
 				</div>
