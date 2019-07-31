@@ -123,7 +123,7 @@ class News_model extends CI_Model
     {
         $uniqid = uniqid();
         $config['upload_path']          = './upload/news/';
-        $config['allowed_types']        = 'jpg|png|jpeg';
+        $config['allowed_types']        = 'jpg|png|jpeg|gif|svg';
         $config['file_name']            = 'news-'.$uniqid;
         $config['overwrite']			      = true;
         $config['max_size']             = 5048; // 1MB
